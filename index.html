@@ -379,7 +379,7 @@
         <div>
           <p class="plain-label">Build your team</p>
           <h2>Model a serious nearshore team in real time.</h2>
-          <p>No commitment. Start with roles, topology, level, and launch risk. Then use the call to shape a team plan you can defend to engineering, security, and finance.</p>
+          <p>No commitment. Start with roles, topology, level, and launch risk. Copy the plan into the booking form so TeamStation staff can prepare before the call.</p>
           <form class="builder" aria-label="Team builder controls">
             <label>
               Team topology
@@ -435,7 +435,18 @@
             <li>Transparent role, level, and capacity planning</li>
             <li>EOR, payroll, device, MDM, and access path included</li>
           </ul>
-          <a class="button" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1JD2e4SmSzEC82NiTvzvUJNaghMafqlUdoTB9YlWfUSsJa2fC4uqoXGoOb9XNhRIsNa-IOIXSq">Book the team build call</a>
+          <label class="plan-copy-label" for="plan-copy">Copy this into the booking form</label>
+<textarea id="plan-copy" class="plan-copy" readonly rows="7">TeamStation starter plan:
+Team topology: Product engineering pod
+Role focus: Full-stack engineers
+Size: 5 people
+Level mix: L2/L3 delivery mix
+Launch needs: Nebula AI sourcing, Axiom Cortex vetting, pricing plan, EOR, payroll, device, MDM, and access path.</textarea>
+          <div class="plan-actions">
+            <button id="copy-plan" class="button button-secondary button-copy" type="button">Copy plan</button>
+            <a id="booking-link" class="button" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1JD2e4SmSzEC82NiTvzvUJNaghMafqlUdoTB9YlWfUSsJa2fC4uqoXGoOb9XNhRIsNa-IOIXSq">Book the team build call</a>
+          </div>
+          <p id="copy-status" class="copy-status" aria-live="polite"></p>
         </aside>
       </div>
     </section>
