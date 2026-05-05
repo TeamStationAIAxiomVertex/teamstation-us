@@ -898,6 +898,44 @@ h2 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.faq-section {
+  padding: 74px 0;
+  background: var(--soft);
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-list details {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-list summary {
+  cursor: pointer;
+  padding: 18px 20px;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 900;
+  list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list p {
+  padding: 0 20px 20px;
+  color: #475b74;
+  font-size: 16px;
+}
+
 .final-cta {
   padding: 58px 0;
   color: #fff;
