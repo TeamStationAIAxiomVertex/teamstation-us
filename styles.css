@@ -774,6 +774,7 @@ h2 {
 }
 
 .plan-card {
+  position: relative;
   padding: 28px;
   border-radius: 10px;
   color: #d9e8ff;
@@ -828,9 +829,28 @@ h2 {
   background: #57e39e;
 }
 
-.plan-copy-label {
+.plan-copy {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.handoff-card {
+  padding: 16px;
+  margin-top: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.handoff-card > span {
   display: block;
-  margin: 20px 0 8px;
   color: #8cbcff;
   font-size: 12px;
   font-weight: 950;
@@ -838,23 +858,45 @@ h2 {
   text-transform: uppercase;
 }
 
-.plan-copy {
-  width: 100%;
-  min-height: 136px;
-  resize: vertical;
-  padding: 13px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 8px;
-  color: #eaf3ff;
-  background: rgba(255, 255, 255, 0.07);
-  font: 600 12px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+.handoff-card p {
+  margin-top: 8px;
+  color: #c8d9f3;
+  font-size: 14px;
+  line-height: 1.42;
+}
+
+.brief-rows {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.brief-rows div {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 10px;
+  align-items: baseline;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brief-rows strong {
+  color: #8cbcff;
+  font-size: 12px;
+}
+
+.brief-rows em {
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 800;
 }
 
 .plan-actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(120px, 0.58fr) minmax(170px, 1fr);
   gap: 10px;
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 .button-copy {
@@ -899,31 +941,76 @@ h2 {
 }
 
 .faq-section {
-  padding: 74px 0;
-  background: var(--soft);
+  padding: 82px 0;
+  background: linear-gradient(180deg, var(--soft) 0%, #f8fbff 100%);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(520px, 1fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.faq-intro {
+  position: sticky;
+  top: 98px;
+}
+
+.faq-intro h2 {
+  max-width: 520px;
+}
+
+.faq-intro p:not(.plain-label) {
+  max-width: 510px;
+  margin-top: 16px;
+  color: #40536d;
+  font-size: 18px;
 }
 
 .faq-list {
   display: grid;
-  gap: 12px;
-  max-width: 900px;
-  margin: 0 auto;
+  gap: 14px;
 }
 
 .faq-list details {
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 10px;
   background: #fff;
   box-shadow: var(--shadow-soft);
+  overflow: hidden;
 }
 
 .faq-list summary {
+  position: relative;
   cursor: pointer;
-  padding: 18px 20px;
+  padding: 20px 58px 20px 22px;
   color: var(--ink);
   font-size: 18px;
   font-weight: 900;
   list-style: none;
+}
+
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--blue);
+  background: #eef5ff;
+  transform: translateY(-50%);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.faq-list details[open] summary::after {
+  content: "-";
 }
 
 .faq-list summary::-webkit-details-marker {
@@ -931,9 +1018,10 @@ h2 {
 }
 
 .faq-list p {
-  padding: 0 20px 20px;
+  padding: 0 22px 22px;
   color: #475b74;
   font-size: 16px;
+  line-height: 1.52;
 }
 
 .final-cta {
@@ -1023,8 +1111,13 @@ h2 {
   .solution-grid,
   .sandler-grid,
   .builder-grid,
-  .security-grid {
+  .security-grid,
+  .faq-grid {
     grid-template-columns: 1fr;
+  }
+
+  .faq-intro {
+    position: static;
   }
 
   .hero-steps {
@@ -1132,8 +1225,18 @@ h2 {
 
   .section,
   .team-builder,
-  .security-section {
+  .security-section,
+  .faq-section {
     padding: 58px 0;
+  }
+
+  .plan-actions,
+  .brief-rows div {
+    grid-template-columns: 1fr;
+  }
+
+  .brief-rows div {
+    gap: 3px;
   }
 
   .map-row {

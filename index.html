@@ -524,8 +524,17 @@
             <li>Transparent role, level, and capacity planning</li>
             <li>EOR, payroll, device, MDM, and access path included</li>
           </ul>
-          <label class="plan-copy-label" for="plan-copy">Copy this into the booking form</label>
-<textarea id="plan-copy" class="plan-copy" readonly rows="7">TeamStation starter plan:
+          <div class="handoff-card">
+            <span>Booking handoff</span>
+            <p>Copy this brief and paste it into the Google Calendar booking form so TeamStation staff can prepare.</p>
+            <div class="brief-rows" aria-label="Booking brief preview">
+              <div><strong>Topology</strong><em id="brief-topology">Product engineering pod</em></div>
+              <div><strong>Role focus</strong><em id="brief-role">Full-stack engineers</em></div>
+              <div><strong>Team size</strong><em><output id="brief-size">5</output> people</em></div>
+              <div><strong>Level mix</strong><em id="brief-level">L2/L3 delivery mix</em></div>
+            </div>
+          </div>
+          <textarea id="plan-copy" class="plan-copy" readonly rows="7" aria-label="Copyable TeamStation starter plan">TeamStation starter plan:
 Team topology: Product engineering pod
 Role focus: Full-stack engineers
 Size: 5 people
@@ -559,10 +568,11 @@ Launch needs: Nebula AI sourcing, Axiom Cortex vetting, pricing plan, EOR, payro
     </section>
 
     <section class="faq-section">
-      <div class="wrap">
-        <div class="section-head center">
+      <div class="wrap faq-grid">
+        <div class="faq-intro">
           <p class="plain-label">Buyer questions</p>
           <h2>Nearshore software development questions CTOs and CIOs ask first.</h2>
+          <p>Use these answers to pressure-test the model before a call. The point is not more resumes. The point is a safer, clearer way to build the team.</p>
         </div>
         <div class="faq-list">
           <details>

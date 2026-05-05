@@ -9,6 +9,10 @@ const planCopy = document.querySelector("#plan-copy");
 const copyPlan = document.querySelector("#copy-plan");
 const copyStatus = document.querySelector("#copy-status");
 const bookingLink = document.querySelector("#booking-link");
+const briefTopology = document.querySelector("#brief-topology");
+const briefRole = document.querySelector("#brief-role");
+const briefSize = document.querySelector("#brief-size");
+const briefLevel = document.querySelector("#brief-level");
 
 const baseBookingUrl = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1JD2e4SmSzEC82NiTvzvUJNaghMafqlUdoTB9YlWfUSsJa2fC4uqoXGoOb9XNhRIsNa-IOIXSq";
 
@@ -37,6 +41,22 @@ function updatePlan() {
 
   if (planCopy) {
     planCopy.value = planText;
+  }
+
+  if (briefTopology) {
+    briefTopology.textContent = teamTopology.value;
+  }
+
+  if (briefRole) {
+    briefRole.textContent = teamRole.value;
+  }
+
+  if (briefSize) {
+    briefSize.textContent = size;
+  }
+
+  if (briefLevel) {
+    briefLevel.textContent = teamLevel.value;
   }
 
   if (bookingLink) {
