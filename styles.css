@@ -1119,6 +1119,10 @@ h2 {
   font-weight: 900;
 }
 
+.control-label {
+  display: block;
+}
+
 .builder input,
 .builder select {
   width: 100%;
@@ -1250,12 +1254,14 @@ h2 {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.brief-rows strong {
+.brief-rows dt {
   color: #8cbcff;
   font-size: 12px;
+  font-weight: 900;
 }
 
-.brief-rows em {
+.brief-rows dd {
+  margin: 0;
   color: #fff;
   font-size: 13px;
   font-style: normal;

@@ -28,7 +28,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=20260505-4">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="alternate" type="text/markdown" href="/llms.txt" title="TeamStation AI LLM summary">
-  <link rel="stylesheet" href="/styles.css?v=20260506-3">
+  <link rel="stylesheet" href="/styles.css?v=20260506-4">
 
   <script type="application/ld+json">
   {
@@ -689,7 +689,7 @@
           <p>No commitment. Start with roles, topology, level, and launch risk. Copy the plan into the booking form so TeamStation staff can prepare before the call.</p>
           <form class="builder" aria-label="Team builder controls">
             <label>
-              Team topology
+              <span class="control-label">Team topology</span>
               <select id="team-topology">
                 <option value="Product engineering pod">Product engineering pod</option>
                 <option value="Platform and API team">Platform and API team</option>
@@ -702,7 +702,7 @@
               </select>
             </label>
             <label>
-              Primary role focus
+              <span class="control-label">Primary role focus</span>
               <select id="team-role">
                 <option value="Full-stack engineers">Full-stack engineers</option>
                 <option value="Frontend React and Next.js engineers">Frontend React and Next.js engineers</option>
@@ -717,12 +717,12 @@
               </select>
             </label>
             <label>
-              Team size
+              <span class="control-label">Team size</span>
               <input id="team-size" type="range" min="1" max="16" value="5">
               <span><output id="team-size-output">5</output> people</span>
             </label>
             <label>
-              Level mix
+              <span class="control-label">Level mix</span>
               <select id="team-level">
                 <option value="L2/L3 delivery mix">L2/L3 delivery mix</option>
                 <option value="Senior-heavy L3 mix">Senior-heavy L3 mix</option>
@@ -745,19 +745,26 @@
           <div class="handoff-card">
             <span>Prepared booking brief</span>
             <p>Copy this clean team brief into the calendar form. It gives TeamStation staff the context before the call starts.</p>
-            <div class="brief-rows" aria-label="Booking brief preview">
-              <div><strong>Topology</strong><em id="brief-topology">Product engineering pod</em></div>
-              <div><strong>Role focus</strong><em id="brief-role">Full-stack engineers</em></div>
-              <div><strong>Team size</strong><em><output id="brief-size">5</output> people</em></div>
-              <div><strong>Level mix</strong><em id="brief-level">L2/L3 delivery mix</em></div>
-            </div>
+            <dl class="brief-rows" aria-label="Booking brief preview">
+              <div>
+                <dt>Topology</dt>
+                <dd id="brief-topology">Product engineering pod</dd>
+              </div>
+              <div>
+                <dt>Role focus</dt>
+                <dd id="brief-role">Full-stack engineers</dd>
+              </div>
+              <div>
+                <dt>Team size</dt>
+                <dd><output id="brief-size">5</output> people</dd>
+              </div>
+              <div>
+                <dt>Level mix</dt>
+                <dd id="brief-level">L2/L3 delivery mix</dd>
+              </div>
+            </dl>
           </div>
-          <textarea id="plan-copy" class="plan-copy" readonly rows="7" aria-label="Copyable TeamStation starter plan">TeamStation starter plan:
-Team topology: Product engineering pod
-Role focus: Full-stack engineers
-Size: 5 people
-Level mix: L2/L3 delivery mix
-Launch needs: Nebula AI sourcing, Axiom Cortex vetting, pricing plan, EOR, payroll, device, MDM, and access path.</textarea>
+          <textarea id="plan-copy" class="plan-copy" readonly rows="7" aria-label="Copyable TeamStation starter plan" aria-hidden="true" tabindex="-1"></textarea>
           <div class="plan-actions">
             <button id="copy-plan" class="button button-secondary button-copy" type="button">Copy plan</button>
             <a id="booking-link" class="button" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1JD2e4SmSzEC82NiTvzvUJNaghMafqlUdoTB9YlWfUSsJa2fC4uqoXGoOb9XNhRIsNa-IOIXSq">Book the team build call</a>
