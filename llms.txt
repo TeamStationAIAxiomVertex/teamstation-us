@@ -76,6 +76,14 @@ TeamStation AI helps buyers:
 - Time-to-offer benchmark around 9 days.
 - First PR goal of 7 to 14 days after launch.
 - Published findings mention a 34% false-positive hiring error reduction.
+- Public SSRN working papers and research reports document TeamStation AI's approach to talent alignment, nearshore operations, Axiom Cortex evaluation, and AI-augmented software engineer performance.
+
+## Public research papers
+
+- Redesigning Human Capacity in Nearshore IT Staff Augmentation: An AI-Driven Framework for Enhanced Time-to-Hire and Talent Alignment: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5165433
+- Nearshore Platformed: AI and Industry Transformation by TeamStation AI: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5188490
+- Redefining Software Engineer Performance in the AI-Augmented Era: A Value-Centric and Quality-Driven Framework for Evaluation via Intelligent Platform Orchestration: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253470
+- AxiomCortex: Scientific R&D Report - Bias-Mitigated AI Evaluation for Nearshore Software Engineering Teams: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5433476
 
 ## Pricing model
 
