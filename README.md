@@ -38,5 +38,6 @@ The homepage includes:
 - WebSite schema
 - Service schema
 - FAQPage schema
+- level-based pricing signals
 - `robots.txt`
 - `sitemap.xml`

@@ -665,12 +665,47 @@ h2 {
 }
 
 .entropy-card-top span,
-.entropy-meter span {
+.entropy-meter span,
+.pricing-hero span,
+.pricing-grid span {
   color: #8cbcff;
   font-size: 12px;
   font-weight: 950;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0 0 20px;
+}
+
+.experience-grid article {
+  min-height: 142px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.experience-grid strong,
+.experience-grid span {
+  display: block;
+}
+
+.experience-grid strong {
+  color: #fff;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.experience-grid span {
+  margin-top: 10px;
+  color: #bdcce4;
+  font-size: 15px;
 }
 
 .entropy-card-top strong {
@@ -790,6 +825,162 @@ h2 {
   margin-top: 10px;
   color: #e0ecff;
   font-size: 15px;
+}
+
+.pricing-section {
+  background: #fff;
+}
+
+.pricing-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(360px, 0.58fr);
+  gap: 22px;
+  align-items: stretch;
+  margin-bottom: 18px;
+}
+
+.pricing-hero > div,
+.pricing-hero ul,
+.pricing-grid article,
+.value-grid article {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow-soft);
+}
+
+.pricing-hero > div {
+  padding: 30px;
+  color: #dceaff;
+  background:
+    radial-gradient(circle at 82% 10%, rgba(47, 124, 255, 0.35), transparent 34%),
+    linear-gradient(135deg, #061b3d 0%, #082a5a 100%);
+}
+
+.pricing-hero strong {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  font-size: clamp(46px, 6vw, 76px);
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.pricing-hero p {
+  max-width: 720px;
+  margin-top: 18px;
+  color: #c7d8f0;
+  font-size: 18px;
+}
+
+.pricing-hero ul {
+  display: grid;
+  gap: 0;
+  padding: 12px 22px;
+  margin: 0;
+  background: #f5f9ff;
+  list-style: none;
+}
+
+.pricing-hero li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 52px;
+  padding-left: 28px;
+  color: var(--navy);
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.pricing-hero li:last-child {
+  border-bottom: 0;
+}
+
+.pricing-hero li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #57e39e;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.pricing-grid article {
+  min-height: 216px;
+  padding: 22px;
+  background: #fff;
+}
+
+.pricing-grid span {
+  color: var(--blue);
+}
+
+.pricing-grid strong {
+  display: block;
+  margin-top: 12px;
+  color: var(--ink);
+  font-size: clamp(32px, 4vw, 44px);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.pricing-grid p {
+  margin-top: 12px;
+  color: #40536d;
+  font-size: 16px;
+}
+
+.pricing-grid small {
+  display: block;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.value-grid article {
+  padding: 20px;
+  background: #eff6ff;
+}
+
+.value-grid strong,
+.value-grid span {
+  display: block;
+}
+
+.value-grid strong {
+  color: var(--navy);
+  font-size: 18px;
+}
+
+.value-grid span {
+  margin-top: 8px;
+  color: #40536d;
+  font-size: 15px;
+}
+
+.pricing-note {
+  max-width: 960px;
+  margin: 22px auto 0;
+  color: #5b6e88;
+  font-size: 14px;
+  text-align: center;
 }
 
 .roles-section,
@@ -1295,12 +1486,21 @@ h2 {
   .pain-icons,
   .proof-metrics,
   .role-grid,
-  .topology-compare {
+  .topology-compare,
+  .experience-grid,
+  .pricing-grid,
+  .value-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .topology-compare {
+  .topology-compare,
+  .pricing-hero {
     grid-template-columns: 1fr;
+  }
+
+  .pricing-grid,
+  .value-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .pain-icons article:nth-child(3) {
@@ -1347,6 +1547,9 @@ h2 {
   .pain-icons,
   .proof-metrics,
   .role-grid,
+  .experience-grid,
+  .pricing-grid,
+  .value-grid,
   .capability-row,
   .security-items,
   .footer-grid {

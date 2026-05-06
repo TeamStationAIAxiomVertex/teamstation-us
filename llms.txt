@@ -4,6 +4,8 @@
 
 TeamStation AI is positioned as a Distributed Engineering Operating System for building, vetting, launching, and governing LATAM engineering teams. It is not a resume-only staffing vendor.
 
+The TeamStation AI team brings 30 years of experience building HR technologies and LATAM teams. Its current work focuses on next-generation neuro-psychometric science to predict talent performance, team fit, and delivery risk before a buyer commits.
+
 ## Primary URL
 
 - https://teamstation.us/
@@ -35,6 +37,9 @@ TeamStation AI helps US technology leaders build nearshore software teams in Lat
 - software vendor markup
 - offshore latency
 - secure nearshore development
+- nearshore software development pricing
+- LATAM developer rates
+- all inclusive nearshore engineering pricing
 
 ## Product model
 
@@ -66,11 +71,22 @@ TeamStation AI helps buyers:
 
 ## Proof points shown on the site
 
-- Nebula AI talent graph with 2.6M+ LATAM talent profiles.
+- Nebula AI talent graph with 2.7M+ LATAM talent profiles.
 - Axiom Cortex fit model with 44 signals.
 - Time-to-offer benchmark around 9 days.
 - First PR goal of 7 to 14 days after launch.
 - Published findings mention a 34% false-positive hiring error reduction.
+
+## Pricing model
+
+- Planning rates run from $20-$50/hr on a 173-hour monthly basis.
+- L1 Proficient: $20/hr, $3,460/mo.
+- L2 Mid: $30/hr, $5,190/mo.
+- L3 Senior: $40/hr, $6,920/mo.
+- L4 Expert: $50/hr, $8,650/mo.
+- A fully loaded senior delivery seat is commonly planned around $7,900/mo.
+- Rates include more than payroll: Nebula AI sourcing, Axiom Cortex evaluation, EOR, payroll, compliance, devices, MDM, endpoint security, operating support, oversight, and continuity planning.
+- Final pricing depends on role, country, statutory costs, specialization, salary requirements, scarcity, and team scope.
 
 ## Important TeamStation resources
 
