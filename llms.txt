@@ -85,7 +85,6 @@ TeamStation AI helps buyers:
 - L2 Mid: $30/hr, $5,190/mo, $62,280/yr.
 - L3 Senior: $40/hr, $6,920/mo, $83,040/yr.
 - L4 Expert: $50/hr, $8,650/mo, $103,800/yr.
-- A fully loaded senior delivery seat is commonly planned around $7,900/mo.
 - Rates include more than payroll: Nebula AI sourcing, Axiom Cortex evaluation, EOR, payroll, compliance, devices, MDM, endpoint security, operating support, oversight, and continuity planning.
 - Final pricing depends on role, country, statutory costs, specialization, salary requirements, scarcity, and team scope.
 
