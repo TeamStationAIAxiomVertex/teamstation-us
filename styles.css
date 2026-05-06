@@ -605,6 +605,150 @@ h2 {
   font-size: 13px;
 }
 
+.topology-section {
+  padding: 88px 0;
+  color: #dceaff;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(47, 124, 255, 0.28), transparent 32%),
+    linear-gradient(180deg, #061b3d 0%, #03142e 100%);
+}
+
+.topology-section .plain-label {
+  color: #8cbcff;
+}
+
+.topology-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(420px, 0.75fr);
+  gap: 56px;
+  align-items: end;
+  margin-bottom: 34px;
+}
+
+.topology-intro h2 {
+  color: #fff;
+  max-width: 700px;
+}
+
+.topology-intro p {
+  color: #c7d8f0;
+  font-size: 19px;
+}
+
+.topology-intro a {
+  display: inline-flex;
+  margin-top: 18px;
+  color: #8cbcff;
+  font-weight: 900;
+}
+
+.topology-compare {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.entropy-card {
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 22px 52px rgba(0, 0, 0, 0.16);
+}
+
+.entropy-card-top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.entropy-card-top span,
+.entropy-meter span {
+  color: #8cbcff;
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.entropy-card-top strong {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.12;
+}
+
+.entropy-points {
+  display: grid;
+  gap: 12px;
+}
+
+.entropy-points div {
+  min-height: 112px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.entropy-points h3 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.entropy-points p {
+  margin-top: 8px;
+  color: #bdcce4;
+  font-size: 15px;
+}
+
+.entropy-meter {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.entropy-meter strong {
+  display: block;
+  margin-top: 5px;
+  color: #fff;
+  font-size: 17px;
+}
+
+.entropy-meter div {
+  height: 8px;
+  overflow: hidden;
+  margin-top: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.entropy-meter i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.entropy-card-critical .entropy-meter i {
+  background: #ff6b6b;
+}
+
+.entropy-card-optimized .entropy-meter i {
+  background: #57e39e;
+}
+
+.entropy-outcome {
+  margin-top: 14px;
+  color: #c7d8f0;
+  font-size: 15px;
+}
+
+.entropy-outcome strong {
+  color: #fff;
+}
+
 .proof-band {
   padding: 54px 0;
   color: #fff;
@@ -649,7 +793,6 @@ h2 {
 }
 
 .roles-section,
-.team-builder,
 .faq-section {
   background: var(--soft);
 }
@@ -722,7 +865,11 @@ h2 {
 }
 
 .team-builder {
-  padding: 78px 0;
+  padding: 82px 0;
+  color: #dceaff;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(47, 124, 255, 0.34), transparent 34%),
+    linear-gradient(180deg, #061b3d 0%, #082a5a 100%);
 }
 
 .builder-grid {
@@ -735,8 +882,16 @@ h2 {
 .builder-grid > div > p:not(.plain-label) {
   max-width: 700px;
   margin-top: 16px;
-  color: #40536d;
+  color: #c7d8f0;
   font-size: 18px;
+}
+
+.team-builder h2 {
+  color: #fff;
+}
+
+.team-builder .plain-label {
+  color: #8cbcff;
 }
 
 .builder {
@@ -749,7 +904,7 @@ h2 {
 .builder label {
   display: grid;
   gap: 8px;
-  color: var(--ink);
+  color: #fff;
   font-weight: 900;
 }
 
@@ -759,7 +914,7 @@ h2 {
   min-height: 50px;
   border: 1px solid #c8d8ea;
   border-radius: 7px;
-  background: #fff;
+  background: #f8fbff;
   color: var(--ink);
   padding: 0 13px;
 }
@@ -769,7 +924,7 @@ h2 {
 }
 
 .builder label span {
-  color: var(--muted);
+  color: #b9cbe6;
   font-size: 14px;
 }
 
@@ -778,8 +933,11 @@ h2 {
   padding: 28px;
   border-radius: 10px;
   color: #d9e8ff;
-  background: var(--navy);
-  box-shadow: var(--shadow);
+  background:
+    radial-gradient(circle at 20% 0%, rgba(47, 124, 255, 0.34), transparent 36%),
+    #03142e;
+  box-shadow: 0 24px 58px rgba(0, 0, 0, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .plan-card > span {
@@ -842,11 +1000,12 @@ h2 {
 }
 
 .handoff-card {
-  padding: 16px;
+  padding: 18px;
   margin-top: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(140, 188, 255, 0.3);
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.07);
+  background:
+    linear-gradient(180deg, rgba(47, 124, 255, 0.16), rgba(255, 255, 255, 0.055));
 }
 
 .handoff-card > span {
@@ -941,8 +1100,11 @@ h2 {
 }
 
 .faq-section {
-  padding: 82px 0;
-  background: linear-gradient(180deg, var(--soft) 0%, #f8fbff 100%);
+  padding: 88px 0;
+  color: #dceaff;
+  background:
+    radial-gradient(circle at 12% 5%, rgba(47, 124, 255, 0.28), transparent 34%),
+    linear-gradient(180deg, #061b3d 0%, #03142e 100%);
 }
 
 .faq-grid {
@@ -959,13 +1121,18 @@ h2 {
 
 .faq-intro h2 {
   max-width: 520px;
+  color: #fff;
 }
 
 .faq-intro p:not(.plain-label) {
   max-width: 510px;
   margin-top: 16px;
-  color: #40536d;
+  color: #c7d8f0;
   font-size: 18px;
+}
+
+.faq-section .plain-label {
+  color: #8cbcff;
 }
 
 .faq-list {
@@ -974,18 +1141,18 @@ h2 {
 }
 
 .faq-list details {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.16);
   overflow: hidden;
 }
 
 .faq-list summary {
   position: relative;
   cursor: pointer;
-  padding: 20px 58px 20px 22px;
-  color: var(--ink);
+  padding: 22px 64px 22px 24px;
+  color: #fff;
   font-size: 18px;
   font-weight: 900;
   list-style: none;
@@ -1002,8 +1169,8 @@ h2 {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: var(--blue);
-  background: #eef5ff;
+  color: #fff;
+  background: var(--blue);
   transform: translateY(-50%);
   font-size: 20px;
   line-height: 1;
@@ -1018,8 +1185,8 @@ h2 {
 }
 
 .faq-list p {
-  padding: 0 22px 22px;
-  color: #475b74;
+  padding: 0 24px 24px;
+  color: #c7d8f0;
   font-size: 16px;
   line-height: 1.52;
 }
@@ -1109,6 +1276,7 @@ h2 {
 @media (max-width: 1080px) {
   .hero-grid,
   .solution-grid,
+  .topology-intro,
   .sandler-grid,
   .builder-grid,
   .security-grid,
@@ -1126,8 +1294,13 @@ h2 {
 
   .pain-icons,
   .proof-metrics,
-  .role-grid {
+  .role-grid,
+  .topology-compare {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .topology-compare {
+    grid-template-columns: 1fr;
   }
 
   .pain-icons article:nth-child(3) {
