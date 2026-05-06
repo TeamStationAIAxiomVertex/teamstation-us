@@ -49,6 +49,13 @@ svg {
   display: block;
 }
 
+.icon-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -1133,12 +1140,232 @@ h2 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.role-grid article {
+  min-height: 178px;
+}
+
+.role-icon {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  border: 1px solid #cfe0f4;
+  border-radius: 10px;
+  color: var(--blue);
+  background: linear-gradient(180deg, #ffffff, #e9f2ff);
+  box-shadow: 0 10px 22px rgba(7, 94, 234, 0.1);
+}
+
+.role-icon svg {
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .role-grid h3,
 .security-items h3 {
   color: var(--ink);
   font-size: 18px;
   line-height: 1.18;
   letter-spacing: -0.02em;
+}
+
+.country-lanes {
+  margin-top: 34px;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at top right, rgba(47, 124, 255, 0.1), transparent 34%),
+    #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.country-lanes-copy {
+  max-width: 930px;
+  margin-bottom: 24px;
+}
+
+.country-lanes-copy h3 {
+  color: var(--ink);
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.country-lanes-copy p:not(.plain-label) {
+  margin-top: 12px;
+  color: #40536d;
+  font-size: 17px;
+}
+
+.country-source a {
+  color: var(--blue);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.country-card {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #d5e3f4;
+  border-radius: 8px;
+  background: #f8fbff;
+}
+
+.country-card strong,
+.country-card small {
+  display: block;
+}
+
+.country-card strong {
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+.country-card small {
+  margin-top: 4px;
+  color: #5b6e88;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.flag {
+  position: relative;
+  flex: 0 0 auto;
+  width: 38px;
+  height: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(8, 35, 74, 0.16);
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 5px 12px rgba(8, 35, 74, 0.1);
+}
+
+.flag::before,
+.flag::after {
+  content: "";
+  position: absolute;
+}
+
+.flag-mx {
+  background: linear-gradient(to right, #006847 0 33.33%, #fff 33.33% 66.66%, #ce1126 66.66% 100%);
+}
+
+.flag-mx::after,
+.flag-ar::after,
+.flag-gt::after {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #c19b38;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flag-co,
+.flag-ec {
+  background: linear-gradient(to bottom, #fcd116 0 50%, #003893 50% 75%, #ce1126 75% 100%);
+}
+
+.flag-br {
+  background: #009739;
+}
+
+.flag-br::before {
+  width: 20px;
+  height: 20px;
+  background: #ffdf00;
+  left: 8px;
+  top: 2px;
+  transform: rotate(45deg);
+}
+
+.flag-br::after {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #002776;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flag-ar {
+  background: linear-gradient(to bottom, #74acdf 0 33.33%, #fff 33.33% 66.66%, #74acdf 66.66% 100%);
+}
+
+.flag-cl {
+  background: linear-gradient(to bottom, #fff 0 50%, #d52b1e 50% 100%);
+}
+
+.flag-cl::before {
+  width: 15px;
+  height: 13px;
+  left: 0;
+  top: 0;
+  background: #0039a6;
+}
+
+.flag-cl::after {
+  width: 6px;
+  height: 6px;
+  left: 4px;
+  top: 3px;
+  background: #fff;
+  clip-path: polygon(50% 0, 62% 35%, 100% 35%, 69% 57%, 82% 100%, 50% 74%, 18% 100%, 31% 57%, 0 35%, 38% 35%);
+}
+
+.flag-pe {
+  background: linear-gradient(to right, #d91023 0 33.33%, #fff 33.33% 66.66%, #d91023 66.66% 100%);
+}
+
+.flag-cr {
+  background: linear-gradient(to bottom, #002b7f 0 18%, #fff 18% 32%, #ce1126 32% 68%, #fff 68% 82%, #002b7f 82% 100%);
+}
+
+.flag-uy {
+  background: repeating-linear-gradient(to bottom, #fff 0 4px, #fff 4px 5px, #3a75c4 5px 8px);
+}
+
+.flag-uy::before {
+  width: 16px;
+  height: 14px;
+  left: 0;
+  top: 0;
+  background: #fff;
+}
+
+.flag-uy::after {
+  width: 7px;
+  height: 7px;
+  left: 5px;
+  top: 4px;
+  border-radius: 50%;
+  background: #fcd116;
+}
+
+.flag-gt {
+  background: linear-gradient(to right, #4997d0 0 33.33%, #fff 33.33% 66.66%, #4997d0 66.66% 100%);
 }
 
 .comparison-section {
@@ -1634,6 +1861,7 @@ h2 {
   .proof-metrics,
   .paper-grid,
   .role-grid,
+  .country-grid,
   .topology-compare,
   .experience-grid,
   .pricing-grid,
@@ -1701,6 +1929,7 @@ h2 {
   .proof-metrics,
   .paper-grid,
   .role-grid,
+  .country-grid,
   .experience-grid,
   .pricing-grid,
   .value-grid,

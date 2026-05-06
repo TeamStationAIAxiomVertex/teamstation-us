@@ -49,6 +49,23 @@ TeamStation AI helps buyers:
 2. Check real fit with Axiom Cortex cognitive vetting for reasoning, communication, pressure handling, and team fit.
 3. Launch safely with EOR, payroll, devices, MDM, access controls, security planning, and governance.
 
+## LATAM country lanes
+
+TeamStation AI plans nearshore software teams across ten LATAM country lanes in the Nebula talent graph:
+
+- Mexico
+- Colombia
+- Brazil
+- Argentina
+- Chile
+- Peru
+- Costa Rica
+- Uruguay
+- Ecuador
+- Guatemala
+
+Country lane source: https://research.teamstation.dev/research/nearshore-nebula-search-ai
+
 ## Problems TeamStation AI addresses
 
 - Onshore hiring is expensive and slow.
