@@ -915,7 +915,7 @@ h2 {
 }
 
 .pricing-grid article {
-  min-height: 216px;
+  min-height: 236px;
   padding: 22px;
   background: #fff;
 }
@@ -939,9 +939,29 @@ h2 {
   font-size: 16px;
 }
 
-.pricing-grid small {
+.rate-math {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.rate-math p {
+  display: grid;
+  gap: 2px;
+  padding-top: 10px;
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.rate-math b {
+  color: var(--navy);
+  font-size: 20px;
+  line-height: 1.12;
+}
+
+.pricing-grid small,
+.rate-math small {
   display: block;
-  margin-top: 12px;
   color: var(--muted);
   font-size: 13px;
   font-weight: 800;
