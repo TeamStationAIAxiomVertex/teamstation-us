@@ -28,7 +28,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=20260505-4">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="alternate" type="text/markdown" href="/llms.txt" title="TeamStation AI LLM summary">
-  <link rel="stylesheet" href="/styles.css?v=20260507-1">
+  <link rel="stylesheet" href="/styles.css?v=20260507-2">
 
   <script type="application/ld+json">
   {
@@ -584,6 +584,78 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
   <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-cost" viewBox="0 0 32 32">
+      <circle cx="16" cy="16" r="12"></circle>
+      <path d="M16 8v16M21 11h-7a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-7"></path>
+    </symbol>
+    <symbol id="icon-latency" viewBox="0 0 32 32">
+      <circle cx="16" cy="16" r="12"></circle>
+      <path d="M16 9v7l5 3M7 6l3 3M25 6l-3 3"></path>
+    </symbol>
+    <symbol id="icon-resume" viewBox="0 0 32 32">
+      <rect x="8" y="5" width="16" height="22" rx="3"></rect>
+      <path d="M12 12h8M12 17h6M12 22h8M20 5v6h4"></path>
+    </symbol>
+    <symbol id="icon-risk-shield" viewBox="0 0 32 32">
+      <path d="M16 4 26 8v8c0 7-4 11-10 13-6-2-10-6-10-13V8l10-4Z"></path>
+      <path d="M16 10v7M16 22h.01"></path>
+    </symbol>
+    <symbol id="icon-vendors" viewBox="0 0 32 32">
+      <rect x="4" y="5" width="9" height="9" rx="2"></rect>
+      <rect x="19" y="5" width="9" height="9" rx="2"></rect>
+      <rect x="11.5" y="19" width="9" height="9" rx="2"></rect>
+      <path d="M13 10h6M16 14v5"></path>
+    </symbol>
+    <symbol id="icon-owner" viewBox="0 0 32 32">
+      <circle cx="16" cy="11" r="5"></circle>
+      <path d="M7 27c1.8-6 16.2-6 18 0M23 9l4 4-4 4"></path>
+    </symbol>
+    <symbol id="icon-pain" viewBox="0 0 32 32">
+      <path d="M7 8h18M7 16h14M7 24h10"></path>
+      <path d="m23 19 4 4-4 4"></path>
+    </symbol>
+    <symbol id="icon-impact" viewBox="0 0 32 32">
+      <path d="M5 25h22M8 21l5-6 4 4 7-11"></path>
+      <circle cx="24" cy="8" r="3"></circle>
+    </symbol>
+    <symbol id="icon-interview" viewBox="0 0 32 32">
+      <path d="M7 8h18v12H14l-5 5v-5H7V8Z"></path>
+      <path d="M12 13h8M12 17h5"></path>
+    </symbol>
+    <symbol id="icon-controls" viewBox="0 0 32 32">
+      <rect x="6" y="13" width="20" height="14" rx="3"></rect>
+      <path d="M11 13V9a5 5 0 0 1 10 0v4M16 18v4"></path>
+    </symbol>
+    <symbol id="icon-proof" viewBox="0 0 32 32">
+      <path d="M5 16 13 24 27 8"></path>
+      <path d="M7 27h20"></path>
+    </symbol>
+    <symbol id="icon-fit-node" viewBox="0 0 32 32">
+      <circle cx="8" cy="10" r="3"></circle>
+      <circle cx="24" cy="10" r="3"></circle>
+      <circle cx="16" cy="24" r="4"></circle>
+      <path d="M11 11h10M10 13l4 8M22 13l-4 8"></path>
+    </symbol>
+    <symbol id="icon-device" viewBox="0 0 32 32">
+      <rect x="8" y="5" width="16" height="22" rx="3"></rect>
+      <path d="M13 23h6M12 10h8M12 15h8"></path>
+    </symbol>
+    <symbol id="icon-mdm" viewBox="0 0 32 32">
+      <rect x="5" y="7" width="22" height="16" rx="3"></rect>
+      <path d="M10 27h12M16 23v4M11 13h10M11 18h5"></path>
+    </symbol>
+    <symbol id="icon-payroll" viewBox="0 0 32 32">
+      <rect x="5" y="8" width="22" height="16" rx="3"></rect>
+      <path d="M8 13h20M12 20h6M22 20h1M16 5v6"></path>
+    </symbol>
+    <symbol id="icon-compliance" viewBox="0 0 32 32">
+      <path d="M9 5h10l5 5v17H9V5Z"></path>
+      <path d="M19 5v6h5M12 17l3 3 6-7M12 24h9"></path>
+    </symbol>
+    <symbol id="icon-retention" viewBox="0 0 32 32">
+      <path d="M16 6a10 10 0 1 0 8.8 5.2"></path>
+      <path d="M25 5v7h-7M12 16l3 3 6-7"></path>
+    </symbol>
     <symbol id="icon-product" viewBox="0 0 32 32">
       <rect x="5" y="6" width="22" height="18" rx="3"></rect>
       <path d="M9 12h7M9 17h8M21 11l3 4-3 4M13 27h6"></path>
@@ -716,32 +788,32 @@
         <h2>Sound familiar?</h2>
         <div class="pain-icons">
           <article>
-            <span>$</span>
+            <span><svg focusable="false"><use href="#icon-cost"></use></svg></span>
             <h3>Onshore is too expensive?</h3>
             <p>You pay senior US rates and still wait months to fill seats.</p>
           </article>
           <article>
-            <span>12h</span>
+            <span><svg focusable="false"><use href="#icon-latency"></use></svg></span>
             <h3>Offshore slows decisions?</h3>
             <p>Every question waits overnight. PRs stall. Rework grows.</p>
           </article>
           <article>
-            <span>CV</span>
+            <span><svg focusable="false"><use href="#icon-resume"></use></svg></span>
             <h3>Nearshore became resume theater?</h3>
             <p>Good time zones do not fix weak vetting or random resumes.</p>
           </article>
           <article>
-            <span>!</span>
+            <span><svg focusable="false"><use href="#icon-risk-shield"></use></svg></span>
             <h3>Security is unclear?</h3>
             <p>Who owns devices, access, MFA, MDM, revocation, and audit logs?</p>
           </article>
           <article>
-            <span>5x</span>
+            <span><svg focusable="false"><use href="#icon-vendors"></use></svg></span>
             <h3>Too many vendors?</h3>
             <p>Recruiter, EOR, payroll, laptop, security, and delivery all split apart.</p>
           </article>
           <article>
-            <span>?</span>
+            <span><svg focusable="false"><use href="#icon-owner"></use></svg></span>
             <h3>No one owns the result?</h3>
             <p>The vendor filled a seat, but your roadmap still did not move.</p>
           </article>
@@ -758,12 +830,12 @@
         </div>
         <div class="sandler-detail">
           <div class="question-list">
-            <article><strong>Pain</strong><p>Where is the team actually blocked: speed, quality, security, cost, or ownership?</p></article>
-            <article><strong>Impact</strong><p>What happens if this role stays open for another 45 days?</p></article>
-            <article><strong>Hidden cost</strong><p>How much senior engineer time is spent interviewing weak candidates?</p></article>
-            <article><strong>Risk</strong><p>If an engineer starts tomorrow, who controls device, access, payroll, and compliance?</p></article>
-            <article><strong>Decision</strong><p>What proof does finance, security, product, and engineering need before saying yes?</p></article>
-            <article><strong>Fit</strong><p>Are you hiring a person, or designing a team that can ship safely?</p></article>
+            <article><span class="question-icon" aria-hidden="true"><svg focusable="false"><use href="#icon-pain"></use></svg></span><strong>Pain</strong><p>Where is the team actually blocked: speed, quality, security, cost, or ownership?</p></article>
+            <article><span class="question-icon" aria-hidden="true"><svg focusable="false"><use href="#icon-impact"></use></svg></span><strong>Impact</strong><p>What happens if this role stays open for another 45 days?</p></article>
+            <article><span class="question-icon" aria-hidden="true"><svg focusable="false"><use href="#icon-interview"></use></svg></span><strong>Hidden cost</strong><p>How much senior engineer time is spent interviewing weak candidates?</p></article>
+            <article><span class="question-icon" aria-hidden="true"><svg focusable="false"><use href="#icon-controls"></use></svg></span><strong>Risk</strong><p>If an engineer starts tomorrow, who controls device, access, payroll, and compliance?</p></article>
+            <article><span class="question-icon" aria-hidden="true"><svg focusable="false"><use href="#icon-proof"></use></svg></span><strong>Decision</strong><p>What proof does finance, security, product, and engineering need before saying yes?</p></article>
+            <article><span class="question-icon" aria-hidden="true"><svg focusable="false"><use href="#icon-fit-node"></use></svg></span><strong>Fit</strong><p>Are you hiring a person, or designing a team that can ship safely?</p></article>
           </div>
           <p class="context-link-line">CTOs can pressure-test the delivery model in the <a href="https://cto.teamstation.dev/">CTO nearshore engineering playbook</a>. CIOs can review governance, controls, and operational risk in the <a href="https://cio.teamstation.dev/">CIO command center</a>.</p>
         </div>
@@ -1155,12 +1227,12 @@
           <p class="context-link-line">For CIO governance, security, access, payroll, and compliance planning, review the <a href="https://cio.teamstation.dev/">CIO command center</a>.</p>
         </div>
         <div class="security-items">
-          <article><h3>SSO and MFA</h3><p>Access control by default.</p></article>
-          <article><h3>Managed devices</h3><p>Device path before start.</p></article>
-          <article><h3>MDM</h3><p>Policy and endpoint visibility.</p></article>
-          <article><h3>EOR and payroll</h3><p>Cleaner local operations.</p></article>
-          <article><h3>IP and compliance</h3><p>Contract and governance planning.</p></article>
-          <article><h3>Backfill and retention</h3><p>Reduce operational fragility.</p></article>
+          <article><span class="security-icon" aria-hidden="true"><svg focusable="false"><use href="#icon-controls"></use></svg></span><h3>SSO and MFA</h3><p>Access control by default.</p></article>
+          <article><span class="security-icon" aria-hidden="true"><svg focusable="false"><use href="#icon-device"></use></svg></span><h3>Managed devices</h3><p>Device path before start.</p></article>
+          <article><span class="security-icon" aria-hidden="true"><svg focusable="false"><use href="#icon-mdm"></use></svg></span><h3>MDM</h3><p>Policy and endpoint visibility.</p></article>
+          <article><span class="security-icon" aria-hidden="true"><svg focusable="false"><use href="#icon-payroll"></use></svg></span><h3>EOR and payroll</h3><p>Cleaner local operations.</p></article>
+          <article><span class="security-icon" aria-hidden="true"><svg focusable="false"><use href="#icon-compliance"></use></svg></span><h3>IP and compliance</h3><p>Contract and governance planning.</p></article>
+          <article><span class="security-icon" aria-hidden="true"><svg focusable="false"><use href="#icon-retention"></use></svg></span><h3>Backfill and retention</h3><p>Reduce operational fragility.</p></article>
         </div>
       </div>
     </section>
@@ -1214,7 +1286,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer id="site-footer" class="site-footer">
     <div class="wrap footer-grid">
       <div>
         <a class="brand footer-brand" href="/">
