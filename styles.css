@@ -3535,6 +3535,13 @@ body {
   max-width: 720px;
 }
 
+.agentic-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 26px;
+}
+
 .agentic-copy .section-context a {
   text-decoration: none;
 }
@@ -3726,5 +3733,9 @@ body {
   .agentic-metrics div {
     grid-template-columns: 1fr;
     gap: 6px;
+  }
+
+  .agentic-actions .button {
+    width: 100%;
   }
 }
