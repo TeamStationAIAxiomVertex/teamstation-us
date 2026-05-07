@@ -3402,6 +3402,7 @@ body {
   grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
   column-gap: 18px;
+  row-gap: 4px;
   padding: 20px 22px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   background: linear-gradient(145deg, var(--navy), var(--navy-2));
@@ -3409,15 +3410,31 @@ body {
   text-align: left;
 }
 
-.topology-core img {
-  width: 34px;
-  height: 52px;
+.topology-core-icon {
+  display: inline-flex;
+  width: 54px;
+  height: 54px;
   grid-row: 1 / span 2;
-  object-fit: contain;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 9px;
+  color: #d9e7ff;
+  background: rgba(255, 255, 255, 0.08);
   filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.22));
 }
 
-.topology-core span {
+.topology-core-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.topology-core-label {
   color: #cfe0ff;
   font-size: 12px;
   font-weight: 950;
@@ -3516,6 +3533,10 @@ body {
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
+  }
+
+  .topology-core-icon {
+    grid-row: auto;
   }
 
   .node-source,
