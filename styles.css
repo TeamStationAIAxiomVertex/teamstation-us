@@ -1010,9 +1010,22 @@ h2 {
   font-size: 18px;
 }
 
+.pricing-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
 .pricing-guide-button {
   width: fit-content;
-  margin-top: 24px;
+}
+
+.pricing-actions .button-secondary {
+  border-color: #c8d9ee;
+  color: var(--blue);
+  box-shadow: none;
+  text-align: center;
 }
 
 .pricing-hero ul {

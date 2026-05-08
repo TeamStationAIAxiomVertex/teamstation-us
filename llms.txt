@@ -115,6 +115,7 @@ Country lane source: https://research.teamstation.dev/research/nearshore-nebula-
 - L4 Expert: $50/hr, $8,650/mo, $103,800/yr.
 - Rates include more than payroll: Nebula AI sourcing, Axiom Cortex evaluation, EOR, payroll, compliance, devices, MDM, endpoint security, operating support, oversight, and continuity planning.
 - Final pricing depends on role, country, statutory costs, specialization, salary requirements, scarcity, and team scope.
+- Public downloadable comparison PDF for buyers evaluating DIY, Deel, and TeamStation AI: https://teamstation.us/assets/diy-vs-deel-vs-teamstation-price-comparison.pdf
 
 ## Important TeamStation resources
 
