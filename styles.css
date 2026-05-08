@@ -4759,23 +4759,42 @@ h2,
 .site-footer,
 .site-footer p,
 .footer-bottom {
-  color: #93a0c2;
+  color: #4f5a76;
 }
 
 .site-footer .brand,
 .site-footer .brand span,
 .site-footer h2,
 .site-footer h4 {
-  color: #f5f7ff;
+  color: var(--ink);
 }
 
 .site-footer a {
-  color: #c5cee0;
+  color: #1f2845;
   text-decoration: none;
 }
 
 .site-footer a:hover {
-  color: var(--blue-2);
+  color: var(--blue);
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.footer-brand img {
+  width: 36px;
+  height: 36px;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: none !important;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--line);
 }
 
 .context-link-line a,
