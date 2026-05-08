@@ -2069,7 +2069,6 @@ h2 {
     flex-direction: column;
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -5173,4 +5172,372 @@ h2,
   .final-card h2 {
     font-size: 34px;
   }
+}
+
+/* Production monochrome override. Keep this as the last style layer. */
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --soft: #f0f2f5;
+  --soft-2: #e9edf2;
+  --ink: #111722;
+  --text: #303845;
+  --muted: #6f7783;
+  --line: #d9dee6;
+  --blue: #111722;
+  --blue-2: #303845;
+  --navy: #151a23;
+  --navy-2: #1d232e;
+  --electric: #303845;
+  --shadow: none;
+  --shadow-soft: none;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+*,
+*::before,
+*::after {
+  animation: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+body {
+  background: var(--bg) !important;
+  color: var(--text);
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.hero::before,
+.final-cta::before,
+.pricing-hero > div::before,
+.topology-core::after,
+.topology-node span::after,
+.topology-bottom span::after,
+.topology-core-icon::after {
+  display: none !important;
+}
+
+.hero,
+.section,
+.solution-section,
+.sandler,
+.roles-section,
+.comparison-section,
+.pricing-section,
+.security-section,
+.faq-section,
+.proof-band,
+.site-footer {
+  background: var(--surface) !important;
+}
+
+.pain-strip,
+.agentic-section {
+  background: var(--bg) !important;
+}
+
+.topology-section,
+.team-builder,
+.final-cta {
+  background: var(--navy) !important;
+  color: #e5e7eb !important;
+}
+
+.topology-section *,
+.team-builder *,
+.final-cta * {
+  color: inherit;
+}
+
+.topology-section .plain-label,
+.team-builder .plain-label,
+.final-cta .plain-label,
+.plain-label,
+.hero-copy::before,
+.pricing-kicker-row span,
+.pricing-grid span,
+.proof-metrics span,
+.country-card small,
+.site-footer a {
+  color: var(--muted) !important;
+}
+
+.hero-copy h1,
+.section-head h2,
+.country-lanes-copy h3,
+.proof-band h2,
+.faq-intro h2,
+.final-card h2,
+h1,
+h2,
+h3,
+strong {
+  color: var(--ink);
+}
+
+.topology-section h2,
+.topology-section h3,
+.topology-section strong,
+.team-builder h2,
+.team-builder h3,
+.team-builder strong,
+.final-cta h2,
+.final-cta strong {
+  color: #f6f7f9 !important;
+}
+
+.hero-copy h1 em,
+.section-head h2 em,
+.serif-display,
+.proof-metrics a,
+.proof-context a,
+.paper-grid a,
+.section-context a,
+.context-link-line a,
+.country-source a,
+.topology-intro a {
+  color: var(--ink) !important;
+  text-decoration: none !important;
+}
+
+.topology-section a,
+.team-builder a,
+.final-cta a {
+  color: #f6f7f9 !important;
+}
+
+.button,
+.button-secondary,
+.button-document,
+.button-light,
+.button-copy,
+select,
+input,
+.hero-proof-row,
+.hero-proof-row div,
+.hero-topology,
+.topology-frame,
+.topology-head,
+.topology-map,
+.topology-node,
+.topology-core,
+.topology-bottom span,
+.question-list article,
+.agentic-flow article,
+.agentic-metrics div,
+.map-card,
+.capability-row article,
+.experience-grid article,
+.entropy-card,
+.entropy-points div,
+.entropy-meter,
+.proof-metrics,
+.proof-metrics article,
+.research-proof,
+.paper-grid article,
+.pricing-hero,
+.pricing-hero > div,
+.pricing-hero ul,
+.pricing-grid article,
+.value-grid article,
+.role-grid article,
+.country-lanes,
+.country-card,
+.comparison,
+.comparison > div,
+.plan-card,
+.handoff-card,
+.faq-list,
+.faq-list details,
+.site-footer,
+.footer-bottom {
+  border-color: var(--line) !important;
+  border-radius: 0 !important;
+  background: var(--surface) !important;
+}
+
+.topology-section .experience-grid article,
+.topology-section .entropy-card,
+.topology-section .entropy-points div,
+.topology-section .entropy-meter,
+.team-builder .plan-card,
+.team-builder .handoff-card,
+.team-builder select,
+.team-builder input {
+  border-color: #343b49 !important;
+  background: var(--navy-2) !important;
+}
+
+.button,
+.button-document,
+.button-light,
+.pricing-actions .button-light,
+.final-cta .button-light,
+.team-builder .button {
+  border-color: var(--ink) !important;
+  background: var(--ink) !important;
+  color: #ffffff !important;
+}
+
+.button-secondary,
+.pricing-actions .button-secondary,
+.team-builder .button-secondary,
+.button-copy {
+  border-color: var(--line) !important;
+  background: transparent !important;
+  color: var(--ink) !important;
+}
+
+.team-builder .button-secondary,
+.team-builder .button-copy,
+.pricing-hero .button-secondary {
+  border-color: #535c6d !important;
+  color: #f6f7f9 !important;
+}
+
+.step-number,
+.map-logo,
+.question-icon,
+.role-icon,
+.topology-core-icon,
+.pricing-hero li b,
+.pricing-includes span,
+.country-card .flag {
+  border-color: var(--line) !important;
+  background: transparent !important;
+  color: var(--ink) !important;
+}
+
+.pricing-hero {
+  background: var(--navy) !important;
+  border-color: #343b49 !important;
+}
+
+.pricing-hero > div,
+.pricing-hero ul,
+.pricing-includes,
+.pricing-includes span {
+  border-color: #343b49 !important;
+  background: var(--navy-2) !important;
+}
+
+.pricing-hero strong,
+.pricing-hero p,
+.pricing-hero li,
+.pricing-hero li span,
+.pricing-includes span {
+  color: #f6f7f9 !important;
+}
+
+.pricing-hero li b {
+  color: #a5adba !important;
+}
+
+.comparison-head,
+.comparison-head span,
+.comparison-head span:first-child,
+.comparison-head span:last-child {
+  background: var(--navy) !important;
+  color: #f6f7f9 !important;
+}
+
+.topology-flow,
+.flow-signal,
+.flow-token {
+  display: none !important;
+}
+
+.topology-node svg,
+.question-icon svg,
+.role-icon svg,
+.agentic-flow svg {
+  color: currentColor;
+  stroke: currentColor;
+}
+
+.site-header .brand img,
+.site-footer .brand img,
+.footer-brand img {
+  border-radius: 50% !important;
+  background: #ffffff !important;
+}
+
+.flag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.flag::before,
+.flag::after {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  clip-path: none !important;
+  transform: none !important;
+  background: transparent !important;
+}
+
+.flag::after {
+  content: none !important;
+}
+
+.flag-mx::before { content: "MX" !important; }
+.flag-co::before { content: "CO" !important; }
+.flag-br::before { content: "BR" !important; }
+.flag-ar::before { content: "AR" !important; }
+.flag-cl::before { content: "CL" !important; }
+.flag-pe::before { content: "PE" !important; }
+.flag-cr::before { content: "CR" !important; }
+.flag-uy::before { content: "UY" !important; }
+.flag-ec::before { content: "EC" !important; }
+.flag-gt::before { content: "GT" !important; }
+
+.hero .topology-core {
+  border-color: #343b49 !important;
+  background: var(--navy) !important;
+}
+
+.hero .topology-core-icon {
+  border-color: #535c6d !important;
+  color: #f6f7f9 !important;
+}
+
+.hero .topology-core-label {
+  color: #a5adba !important;
+}
+
+.hero .topology-core strong {
+  color: #f6f7f9 !important;
+}
+
+.topology-section .plain-label,
+.team-builder .plain-label,
+.team-builder .control-label,
+.team-builder label span,
+.pricing-hero .pricing-kicker-row span,
+.pricing-hero li b {
+  color: #aeb6c4 !important;
+}
+
+.team-builder select,
+.team-builder input {
+  color: #f6f7f9 !important;
 }
