@@ -3346,10 +3346,50 @@ body {
   overflow: hidden;
 }
 
+.topology-flow {
+  position: absolute;
+  inset: 18px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.topology-flow path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.flow-track {
+  stroke: rgba(0, 95, 245, 0.18);
+  stroke-width: 2;
+}
+
+.flow-signal {
+  stroke: var(--blue);
+  stroke-width: 3;
+  stroke-dasharray: 12 96;
+  stroke-dashoffset: 108;
+  opacity: 0.8;
+  animation: topology-signal 5.4s linear infinite;
+}
+
+.signal-b {
+  animation-delay: -1.2s;
+}
+
+.signal-c {
+  animation-delay: -2.4s;
+}
+
+.signal-d {
+  animation-delay: -3.6s;
+}
+
 .topology-node,
 .topology-core {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   border-radius: 9px;
   box-shadow: 0 18px 38px rgba(4, 28, 76, 0.11);
 }
@@ -3365,6 +3405,7 @@ body {
 }
 
 .topology-node span {
+  position: relative;
   display: inline-flex;
   width: 36px;
   height: 36px;
@@ -3374,6 +3415,32 @@ body {
   border-radius: 8px;
   color: var(--blue);
   background: #eef5ff;
+}
+
+.topology-node span::after,
+.topology-core-icon::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border: 1px solid rgba(0, 95, 245, 0.28);
+  border-radius: inherit;
+  opacity: 0;
+  transform: scale(0.88);
+  animation: topology-pulse 4.8s ease-out infinite;
+}
+
+.node-fit span::after {
+  animation-delay: -1.1s;
+}
+
+.topology-core-icon::after {
+  border-color: rgba(255, 255, 255, 0.32);
+  animation-delay: -2.2s;
+}
+
+.node-launch span::after,
+.node-govern span::after {
+  animation-delay: -3.3s;
 }
 
 .topology-node svg {
@@ -3438,6 +3505,7 @@ body {
 }
 
 .topology-core-icon {
+  position: relative;
   display: inline-flex;
   width: 54px;
   height: 54px;
@@ -3449,6 +3517,18 @@ body {
   color: #d9e7ff;
   background: rgba(255, 255, 255, 0.08);
   filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.22));
+}
+
+.topology-core::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(100deg, transparent 0 35%, rgba(255, 255, 255, 0.14) 48%, transparent 62% 100%);
+  opacity: 0.75;
+  transform: translateX(-120%);
+  animation: topology-scan 6.2s ease-in-out infinite;
+  pointer-events: none;
 }
 
 .topology-core-icon svg {
@@ -3476,6 +3556,11 @@ body {
   line-height: 1.25;
 }
 
+.topology-core > * {
+  position: relative;
+  z-index: 1;
+}
+
 .topology-bottom {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3498,6 +3583,41 @@ body {
   color: var(--blue);
   font-size: 12px;
   text-transform: uppercase;
+}
+
+@keyframes topology-signal {
+  to {
+    stroke-dashoffset: -108;
+  }
+}
+
+@keyframes topology-pulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+
+  18% {
+    opacity: 0.72;
+  }
+
+  52%,
+  100% {
+    opacity: 0;
+    transform: scale(1.24);
+  }
+}
+
+@keyframes topology-scan {
+  0%,
+  46% {
+    transform: translateX(-120%);
+  }
+
+  72%,
+  100% {
+    transform: translateX(120%);
+  }
 }
 
 .agentic-section {
@@ -3684,6 +3804,10 @@ body {
     background-size: 30px 30px;
   }
 
+  .topology-flow {
+    display: none;
+  }
+
   .topology-node,
   .topology-core {
     position: static;
@@ -3737,5 +3861,14 @@ body {
 
   .agentic-actions .button {
     width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flow-signal,
+  .topology-node span::after,
+  .topology-core-icon::after,
+  .topology-core::after {
+    animation: none !important;
   }
 }
