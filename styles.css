@@ -4809,6 +4809,33 @@ h2,
   text-decoration: none;
 }
 
+.hero .flow-signal,
+.hero .flow-token,
+.hero .topology-node span::after,
+.hero .topology-core-icon::after,
+.hero .topology-core::after,
+.hero .topology-bottom span::after {
+  display: none !important;
+  animation: none !important;
+}
+
+.hero .flow-track {
+  stroke: rgba(29, 78, 216, 0.24);
+  stroke-width: 1.8;
+}
+
+.hero .topology-node span {
+  border-color: #c8cedb;
+  background: transparent;
+}
+
+.hero .topology-core .topology-core-icon {
+  border-color: #66789f;
+  background: transparent;
+  color: #d8e0f3;
+  filter: none;
+}
+
 @media (max-width: 1080px) {
   .hero-grid {
     grid-template-columns: 1fr;
