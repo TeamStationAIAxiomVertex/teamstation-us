@@ -4,13 +4,13 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   X-Frame-Options: DENY
 
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
 /assets/diy-vs-deel-vs-teamstation-price-comparison.pdf
   Content-Type: application/pdf
   Content-Disposition: attachment; filename="diy-vs-deel-vs-teamstation-price-comparison.pdf"
   Cache-Control: public, max-age=3600
-
-/assets/*
-  Cache-Control: public, max-age=31536000, immutable
 
 /site.webmanifest
   Content-Type: application/manifest+json; charset=utf-8
