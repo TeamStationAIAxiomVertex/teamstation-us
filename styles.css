@@ -4797,6 +4797,23 @@ h2,
   border-top: 1px solid var(--line);
 }
 
+.site-header .brand img,
+.site-footer .brand img,
+.footer-brand img {
+  width: 38px;
+  height: 38px;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  object-fit: contain;
+  background: #ffffff;
+  box-shadow: none !important;
+}
+
+.site-footer {
+  background: #ffffff;
+}
+
 .context-link-line a,
 .section-context a,
 .country-source a,
