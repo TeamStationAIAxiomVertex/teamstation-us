@@ -3349,7 +3349,7 @@ body {
 .topology-flow {
   position: absolute;
   inset: 18px;
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -3361,17 +3361,24 @@ body {
 }
 
 .flow-track {
-  stroke: rgba(0, 95, 245, 0.18);
-  stroke-width: 2;
+  stroke: rgba(0, 95, 245, 0.24);
+  stroke-width: 2.4;
 }
 
 .flow-signal {
   stroke: var(--blue);
-  stroke-width: 3;
-  stroke-dasharray: 12 96;
+  stroke-width: 4.4;
+  stroke-dasharray: 16 92;
   stroke-dashoffset: 108;
-  opacity: 0.8;
-  animation: topology-signal 5.4s linear infinite;
+  opacity: 0.92;
+  animation: topology-signal 4.8s linear infinite;
+}
+
+.flow-token {
+  fill: #ffffff;
+  stroke: var(--blue);
+  stroke-width: 2.2;
+  opacity: 0.98;
 }
 
 .signal-b {
@@ -3569,6 +3576,8 @@ body {
 }
 
 .topology-bottom span {
+  position: relative;
+  overflow: hidden;
   padding: 12px;
   border: 1px solid rgba(0, 95, 245, 0.14);
   border-radius: 8px;
@@ -3576,6 +3585,26 @@ body {
   color: #40536d;
   font-size: 12px;
   line-height: 1.25;
+}
+
+.topology-bottom span::after {
+  content: "";
+  position: absolute;
+  inset: auto 10px 8px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, var(--blue), transparent);
+  opacity: 0;
+  transform: translateX(-105%);
+  animation: topology-step-sweep 5.4s ease-in-out infinite;
+}
+
+.topology-bottom span:nth-child(2)::after {
+  animation-delay: 1.8s;
+}
+
+.topology-bottom span:nth-child(3)::after {
+  animation-delay: 3.6s;
 }
 
 .topology-bottom b {
@@ -3588,6 +3617,25 @@ body {
 @keyframes topology-signal {
   to {
     stroke-dashoffset: -108;
+  }
+}
+
+@keyframes topology-step-sweep {
+  0%,
+  18% {
+    opacity: 0;
+    transform: translateX(-105%);
+  }
+
+  30%,
+  46% {
+    opacity: 0.95;
+  }
+
+  62%,
+  100% {
+    opacity: 0;
+    transform: translateX(105%);
   }
 }
 
@@ -3865,10 +3913,21 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .topology-flow {
+    display: none;
+  }
+
   .flow-signal,
+  .flow-token,
   .topology-node span::after,
   .topology-core-icon::after,
-  .topology-core::after {
+  .topology-core::after,
+  .topology-bottom span::after {
     animation: none !important;
+  }
+
+  .flow-token,
+  .topology-bottom span::after {
+    opacity: 0;
   }
 }
