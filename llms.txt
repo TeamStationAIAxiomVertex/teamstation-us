@@ -88,7 +88,7 @@ Country lane source: https://research.teamstation.dev/research/nearshore-nebula-
 
 ## Proof points shown on the site
 
-- Enterprise operating environments connected to TeamStation AI work include New Balance, DistroKid, Newell Brands, Billups, and CAO Software. The site uses this as text proof only, not logos or unsupported endorsement claims.
+- Enterprise operating environments connected to TeamStation AI work include Fortune 500, Tier 1 enterprise, global consumer, music technology, advertising technology, and enterprise software environments. The site uses category proof only, not logos or unsupported endorsement claims.
 - Visible enterprise phrases include Fortune 500 nearshore software development, Tier 1 enterprise engineering operations, human operated nearshore control plane, Distributed Engineering OS, Nebula Talent Graph, Axiom Cortex neuro psychometric evaluation, and LATAM engineering teams.
 - Nebula AI talent graph with 2.7M+ LATAM talent profiles.
 - Axiom Cortex fit model with 44 signals.
