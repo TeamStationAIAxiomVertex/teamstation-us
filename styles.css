@@ -9243,3 +9243,37 @@ main small {
     gap: 7px !important;
   }
 }
+
+/* Enterprise strip repair: remove the accidental full-width frame line. */
+.enterprise-proof-bar {
+  border: 0 !important;
+  background: transparent !important;
+}
+
+.enterprise-proof-title {
+  border-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.enterprise-proof-chips span,
+.enterprise-proof-chips span:last-child {
+  border-right: 0 !important;
+}
+
+.hero-explainer {
+  border-bottom: 0 !important;
+}
+
+.hero-explainer-grid {
+  border: 0 !important;
+}
+
+.hero-explainer-grid article {
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+  background: transparent !important;
+}
+
+.hero {
+  border-bottom: 0 !important;
+}
