@@ -8429,3 +8429,630 @@ textarea,
     font-size: 15px !important;
   }
 }
+
+/* Final dark-mode integrity pass: one restrained system, no light panels. */
+:root {
+  --bg: #080a0e;
+  --surface: #0f1218;
+  --soft: #141821;
+  --soft-2: #1a1f2a;
+  --panel: #0f1218;
+  --panel-alt: #141821;
+  --ink: #f4f6f8;
+  --ink-soft: #e2e6eb;
+  --text: #c9cfd8;
+  --text-2: #b5bdc9;
+  --muted: #8d96a3;
+  --line: #2b313b;
+  --hairline: #2b313b;
+  --hairline-2: #3a414d;
+  --accent: #8ea8c3;
+  --accent-2: #b8c8d8;
+  --accent-soft: #1a2230;
+  --blue: #8ea8c3;
+  --blue-2: #b8c8d8;
+  --electric: #b8c8d8;
+  --shadow: none;
+  --shadow-soft: none;
+}
+
+html,
+body,
+main {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+main p,
+main li,
+main dd,
+main small,
+main .body-large,
+main .lead,
+main .lede,
+main .section-context,
+main .context-link-line,
+main .country-source,
+main .pricing-note,
+main .research-note,
+main .copy-status {
+  color: var(--text) !important;
+}
+
+main h1,
+main h2,
+main h3,
+main h4,
+main strong,
+main summary,
+.site-header,
+.site-footer h2,
+.site-footer h3,
+.site-footer h4,
+.footer-brand,
+.brand {
+  color: var(--ink) !important;
+}
+
+a,
+main a,
+.site-footer a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+main a:hover,
+.site-footer a:hover {
+  color: var(--ink) !important;
+}
+
+.site-header,
+.hero,
+.section,
+.pain-strip,
+.hero-explainer,
+.control-plane-section,
+.agentic-section,
+.sandler,
+.solution-section,
+.topology-section,
+.proof-band,
+.pricing-section,
+.roles-section,
+.comparison-section,
+.team-builder,
+.security-section,
+.faq-section,
+.final-cta,
+.site-footer {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  border-color: var(--line) !important;
+}
+
+.site-header {
+  background: rgba(8, 10, 14, 0.96) !important;
+}
+
+.wrap > .section-head,
+.section-head,
+.topology-intro,
+.hero-actions,
+.footer-bottom,
+.topology-head,
+.topology-bottom,
+.pricing-actions,
+.pricing-includes,
+.managed-system-signal-strip,
+.vendor-model-head,
+.clarity-head,
+.research-proof-head,
+.operating-ledger-head,
+.system-panel-head {
+  border-color: var(--line) !important;
+}
+
+.hero-topology,
+.hero-system-panel,
+.topology-frame,
+.topology-head,
+.topology-map,
+.topology-node,
+.topology-core,
+.topology-bottom span,
+.hero-explainer-grid article,
+.pain-icons article,
+.managed-system-head,
+.managed-brief-grid article,
+.control-plane-definition,
+.talent-graph-note,
+.layer-card-grid,
+.layer-card-grid article,
+.managed-system-cards article,
+.managed-system-flow article,
+.managed-system-callout,
+.vendor-model-section,
+.vendor-model-head,
+.vendor-model-compare article,
+.vendor-model-callouts article,
+.vendor-model-cta,
+.clarity-shell,
+.clarity-body,
+.clarity-no-grid,
+.clarity-no-grid article,
+.clarity-ops,
+.clarity-ops ul,
+.clarity-ops li,
+.agentic-panel,
+.agentic-ledger,
+.agentic-ledger article,
+.agentic-metrics div,
+.question-list article,
+.sandler-detail .context-link-line,
+.check-list li,
+.operating-ledger-card,
+.operating-ledger div,
+.operating-proof-row,
+.operating-proof-row span,
+.about-brief-grid article,
+.experience-grid article,
+.topology-note,
+.proof-metrics article,
+.research-proof,
+.research-proof-head,
+.paper-grid article,
+.pricing-hero,
+.pricing-hero > div,
+.pricing-hero ul,
+.pricing-grid,
+.pricing-grid article,
+.rate-math,
+.rate-math p,
+.pricing-includes span,
+.value-grid article,
+.role-grid article,
+.country-lanes,
+.country-grid,
+.country-card,
+.comparison,
+.comparison [role="row"],
+.comparison [role="cell"],
+.comparison [role="columnheader"],
+.team-builder-panel,
+.plan-card,
+.handoff-card,
+.brief-rows,
+.security-grid article,
+.faq-list,
+.faq-list details,
+.site-footer nav,
+.footer-grid > div {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border-color: var(--line) !important;
+  box-shadow: none !important;
+}
+
+.context-link-line a,
+.section-context a,
+.proof-context a,
+.research-proof a,
+.country-source a,
+.site-footer a {
+  color: var(--ink) !important;
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+}
+
+.topology-core,
+.topology-head,
+.system-panel-head,
+.operating-ledger-head,
+.pricing-hero,
+.final-card,
+.final-cta,
+.enterprise-proof-bar,
+.vendor-model-primary,
+.vendor-model-cta {
+  background: #0b0d12 !important;
+}
+
+.hero-explainer-grid article,
+.pain-icons article,
+.managed-brief-grid article,
+.managed-system-cards article,
+.managed-system-flow article,
+.layer-card-grid article,
+.vendor-model-compare article,
+.vendor-model-callouts article,
+.clarity-no-grid article,
+.agentic-ledger article,
+.agentic-metrics div,
+.question-list article,
+.about-brief-grid article,
+.experience-grid article,
+.proof-metrics article,
+.paper-grid article,
+.pricing-grid article,
+.value-grid article,
+.role-grid article,
+.country-card,
+.security-grid article {
+  background: var(--surface) !important;
+}
+
+.pain-icons article::before {
+  display: none !important;
+}
+
+.plain-label,
+.eyebrow,
+.mono-label,
+.section-index,
+.nav-links,
+.brand .name small,
+.enterprise-proof-title,
+.enterprise-proof-chips span,
+.layer-card-grid span,
+.pricing-kicker-row span,
+.pricing-grid span,
+.paper-grid span,
+.clarity-no-grid span,
+.operating-ledger dt,
+.system-ledger span,
+.agentic-ledger span,
+.comparison [role="columnheader"],
+.footer-grid h4,
+.site-footer small {
+  color: var(--muted) !important;
+}
+
+.hero-copy h1,
+.section-head h2,
+.pain-strip h2,
+.managed-system-head h2,
+.vendor-model-head h2,
+.clarity-head h2,
+.agentic-copy h2,
+.solution-grid h2,
+.topology-section h2,
+.topology-intro h2,
+.proof-band h2,
+.pricing-section h2,
+.roles-section h2,
+.team-builder h2,
+.faq-intro h2,
+.final-card h2,
+.enterprise-proof-title,
+.pricing-hero strong,
+.pricing-grid strong,
+.rate-math b,
+.value-grid strong,
+.role-grid h3,
+.country-card strong,
+.comparison [role="cell"]:first-child,
+.faq-list summary {
+  color: var(--ink) !important;
+}
+
+.pain-icons p,
+.managed-system-copy p,
+.managed-system-cards p,
+.managed-system-flow li,
+.vendor-model-intro p,
+.vendor-model-compare li,
+.vendor-model-callouts p,
+.clarity-lead,
+.clarity-ops p,
+.clarity-ops li,
+.agentic-copy p,
+.agentic-ledger p,
+.agentic-metrics strong,
+.question-list p,
+.check-list span,
+.operating-ledger span,
+.about-brief-grid strong,
+.experience-grid span,
+.proof-metrics span,
+.research-proof p,
+.paper-grid p,
+.pricing-hero p,
+.pricing-hero li span,
+.pricing-grid small,
+.value-grid span,
+.role-grid p,
+.country-card small,
+.comparison [role="cell"],
+.plan-card p,
+.plan-card li,
+.handoff-card p,
+.brief-rows dd,
+.security-grid p,
+.faq-list p,
+.site-footer p,
+.footer-bottom {
+  color: var(--text) !important;
+}
+
+.hero-copy h1,
+.section-head h2,
+.pain-strip h2,
+.managed-system-head h2,
+.vendor-model-head h2,
+.clarity-head h2,
+.agentic-copy h2,
+.solution-grid h2,
+.topology-section h2,
+.topology-intro h2,
+.proof-band h2,
+.pricing-section h2,
+.roles-section h2,
+.team-builder h2,
+.faq-intro h2,
+.final-card h2 {
+  font-size: clamp(30px, 3.1vw, 44px) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -0.015em !important;
+}
+
+.hero-copy h1 {
+  max-width: 14ch !important;
+  font-size: clamp(40px, 5vw, 62px) !important;
+}
+
+.enterprise-proof-bar {
+  grid-template-columns: minmax(240px, 0.28fr) minmax(0, 1fr) !important;
+  background: transparent !important;
+}
+
+.enterprise-proof-title {
+  background: var(--surface) !important;
+}
+
+.enterprise-proof-chips span {
+  min-height: 42px !important;
+  background: transparent !important;
+  color: var(--text-2) !important;
+}
+
+.clarity-shell,
+.vendor-model-section,
+.pricing-hero,
+.comparison,
+.team-builder-panel,
+.plan-card,
+.faq-list,
+.research-proof,
+.country-lanes {
+  outline: 1px solid rgba(255, 255, 255, 0.015);
+}
+
+.clarity-ops ul,
+.pricing-includes,
+.country-grid,
+.pricing-grid,
+.value-grid,
+.role-grid,
+.proof-metrics,
+.paper-grid,
+.question-list,
+.managed-system-flow,
+.managed-system-cards,
+.vendor-model-compare,
+.vendor-model-callouts {
+  gap: 0 !important;
+}
+
+.comparison {
+  display: grid !important;
+  border: 1px solid var(--line) !important;
+}
+
+.comparison [role="row"] {
+  display: grid !important;
+  grid-template-columns: minmax(150px, 0.52fr) minmax(0, 1fr) minmax(0, 1fr) !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+.comparison [role="row"]:last-child {
+  border-bottom: 0 !important;
+}
+
+.comparison [role="cell"],
+.comparison [role="columnheader"] {
+  padding: 15px 18px !important;
+  border-right: 1px solid var(--line) !important;
+  line-height: 1.45 !important;
+}
+
+.comparison [role="cell"]:last-child,
+.comparison [role="columnheader"]:last-child {
+  border-right: 0 !important;
+}
+
+.comparison-head [role="columnheader"] {
+  background: #0b0d12 !important;
+  color: var(--ink) !important;
+  font-weight: 800 !important;
+}
+
+.button,
+.button-small,
+.button-secondary,
+.button-document,
+.button-light,
+.pricing-guide-button,
+.button-copy,
+.team-builder .button,
+.team-builder .button-secondary,
+.team-builder .button-copy,
+.pricing-actions .button-light,
+.pricing-actions .button-secondary,
+.final-cta .button-light,
+#booking-link {
+  border: 1px solid var(--line) !important;
+  background: var(--soft) !important;
+  color: var(--ink) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.button:hover,
+.button-small:hover,
+.button-secondary:hover,
+.button-document:hover,
+.button-light:hover,
+.pricing-guide-button:hover,
+.button-copy:hover,
+.team-builder .button:hover,
+.team-builder .button-secondary:hover,
+.team-builder .button-copy:hover,
+.pricing-actions .button-light:hover,
+.pricing-actions .button-secondary:hover,
+.final-cta .button-light:hover,
+#booking-link:hover {
+  border-color: var(--hairline-2) !important;
+  background: var(--soft-2) !important;
+}
+
+input,
+select,
+textarea,
+.team-builder select,
+.team-builder input {
+  background: var(--soft) !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--line) !important;
+  box-shadow: none !important;
+}
+
+select option {
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+}
+
+.brand img.mark,
+.footer-brand img,
+.site-footer .brand img {
+  background: var(--surface) !important;
+  border: 1px solid var(--line) !important;
+}
+
+.topology-core-icon,
+.question-icon,
+.role-icon,
+.managed-system-icon,
+.layer-icon,
+.proof-icon {
+  background: var(--soft) !important;
+  color: var(--text) !important;
+  border-color: var(--line) !important;
+}
+
+.security-items article::before {
+  display: none !important;
+}
+
+.security-icon {
+  background: var(--soft) !important;
+  background-image: none !important;
+  color: var(--text) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.flag {
+  border-color: var(--line) !important;
+  background-color: var(--soft) !important;
+}
+
+.final-cta::before,
+.hero::before,
+.enterprise-proof-head {
+  background-image: none !important;
+}
+
+.faq-list summary::after {
+  width: auto !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--muted) !important;
+  font-size: 22px !important;
+  font-weight: 500 !important;
+}
+
+@media (max-width: 880px) {
+  .enterprise-proof-bar {
+    grid-template-columns: 1fr !important;
+  }
+
+  .enterprise-proof-title {
+    min-height: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--line) !important;
+  }
+
+  .enterprise-proof-chips {
+    grid-template-columns: 1fr !important;
+  }
+
+  .enterprise-proof-chips span,
+  .enterprise-proof-chips span:nth-child(3n),
+  .enterprise-proof-chips span:nth-child(-n+3),
+  .enterprise-proof-chips span:nth-child(4n),
+  .enterprise-proof-chips span:nth-child(2n) {
+    min-height: 40px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--line) !important;
+  }
+
+  .enterprise-proof-chips span:last-child {
+    border-bottom: 0 !important;
+  }
+
+  .comparison [role="row"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  .comparison [role="cell"],
+  .comparison [role="columnheader"] {
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--line) !important;
+  }
+
+  .comparison [role="cell"]:last-child,
+  .comparison [role="columnheader"]:last-child {
+    border-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-copy h1 {
+    font-size: 38px !important;
+  }
+
+  .hero-copy h1,
+  .section-head h2,
+  .pain-strip h2,
+  .managed-system-head h2,
+  .vendor-model-head h2,
+  .clarity-head h2,
+  .agentic-copy h2,
+  .solution-grid h2,
+  .topology-section h2,
+  .topology-intro h2,
+  .proof-band h2,
+  .pricing-section h2,
+  .roles-section h2,
+  .team-builder h2,
+  .faq-intro h2,
+  .final-card h2 {
+    line-height: 1.08 !important;
+  }
+}
