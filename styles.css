@@ -6369,6 +6369,75 @@ h3 .heading-accent {
   border-bottom: 0;
 }
 
+.about-brief {
+  display: grid;
+  align-content: center;
+  gap: 14px;
+}
+
+.about-brief-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid #243562;
+  background: #11203d;
+}
+
+.about-brief-grid article {
+  min-height: 144px;
+  padding: 18px;
+  border-right: 1px solid #243562;
+}
+
+.about-brief-grid article:last-child {
+  border-right: 0;
+}
+
+.about-brief-grid span {
+  display: block;
+  margin-bottom: 10px;
+  color: #93a0c2;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-brief-grid strong {
+  display: block;
+  color: #f5f7ff;
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+
+.topology-section .governed-engine {
+  border-color: #243562;
+  background: #11203d;
+}
+
+.topology-section .governed-engine > div:first-child {
+  border-right-color: #243562;
+  background: #11203d;
+}
+
+.topology-section .governed-engine h3,
+.topology-section .governed-engine-copy p,
+.topology-section .governed-engine-copy li {
+  color: #f5f7ff;
+}
+
+.topology-section .governed-engine-copy ul {
+  border-color: #243562;
+}
+
+.topology-section .governed-engine-copy li {
+  border-color: #243562;
+  background: #11203d;
+}
+
 @media (max-width: 1080px) {
   .hero-explainer-grid,
   .clarity-shell,
@@ -6376,6 +6445,7 @@ h3 .heading-accent {
   .buyer-need-shell,
   .buyer-need-grid,
   .governed-engine,
+  .about-brief-grid,
   .operating-truth-strip {
     grid-template-columns: 1fr;
   }
@@ -6390,6 +6460,7 @@ h3 .heading-accent {
   .hero-explainer-grid article,
   .buyer-need-grid article,
   .clarity-no-grid article,
+  .about-brief-grid article,
   .operating-truth-strip article {
     min-height: 0;
     border-right: 0;
@@ -6399,6 +6470,7 @@ h3 .heading-accent {
   .hero-explainer-grid article:last-child,
   .buyer-need-grid article:last-child,
   .clarity-no-grid article:last-child,
+  .about-brief-grid article:last-child,
   .operating-truth-strip article:last-child {
     border-bottom: 0;
   }
@@ -6416,6 +6488,7 @@ h3 .heading-accent {
   .buyer-need-head,
   .buyer-need-grid article,
   .governed-engine > div,
+  .about-brief-grid article,
   .operating-truth-strip article {
     padding: 22px;
   }
