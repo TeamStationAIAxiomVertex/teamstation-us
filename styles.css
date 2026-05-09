@@ -5751,19 +5751,45 @@ body {
   text-wrap: balance;
 }
 
-.hero-headline-accent {
-  display: block;
-  color: var(--ink);
+.hero-headline-accent,
+.heading-accent {
+  color: currentColor;
   font-family: var(--serif);
   font-style: italic;
   font-weight: 400;
   letter-spacing: 0;
 }
 
+.hero-headline-accent {
+  display: block;
+  color: var(--ink);
+}
+
+.heading-accent {
+  display: inline;
+  line-height: inherit;
+}
+
+h2 .heading-accent,
+h3 .heading-accent {
+  display: inline;
+  color: currentColor;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: inherit;
+  text-transform: none;
+}
+
 .section-head h2,
 .control-plane-copy h2,
+.pain-strip h2,
+.agentic-copy h2,
+.solution-grid h2,
 .topology-intro h2,
+.research-proof-head h3,
 .team-builder h2,
+.security-grid h2,
 .faq-intro h2,
 .final-card h2,
 .country-lanes-copy h3,
