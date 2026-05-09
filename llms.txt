@@ -95,17 +95,14 @@ Country lane source: https://research.teamstation.dev/research/nearshore-nebula-
 - Time-to-offer benchmark around 9 days.
 - First PR goal of 7 to 14 days after launch.
 - Published findings mention a 34% false-positive hiring error reduction.
-- Six Google Scholar listed SSRN working papers and research reports document TeamStation AI's approach to talent alignment, nearshore operations, Axiom Cortex evaluation, and AI-augmented software engineer performance.
+- Selected Google Scholar listed SSRN working papers and research reports document TeamStation AI's approach to talent alignment, nearshore operations, Axiom Cortex evaluation, and AI-augmented software engineer performance.
 
 ## Public research papers
 
 - Google Scholar profile for Lonnie McRorey: https://scholar.google.com/citations?user=aNol-ycAAAAJ&hl=en
 - Redesigning Human Capacity in Nearshore IT Staff Augmentation: An AI-Driven Framework for Enhanced Time-to-Hire and Talent Alignment: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5165433
-- AI & Nearshore Teams: Who Gets Replaced and Why | A Research Model for Latin America Software Pipelines: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5745463
 - AxiomCortex: Scientific R&D Report: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5433476
-- AxiomCortex: Scientific R&D Report - Bias-Mitigated AI Evaluation for Nearshore Software Engineering Teams: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5433397
 - Redefining Software Engineer Performance in the AI-Augmented Era: A Value-Centric and Quality-Driven Framework for Evaluation via Intelligent Platform Orchestration: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253470
-- Nearshore Platformed: AI and Industry Transformation by TeamStation AI: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5188490
 
 ## Pricing model
 
