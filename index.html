@@ -28,7 +28,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=20260505-4">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="alternate" type="text/markdown" href="/llms.txt" title="TeamStation AI LLM summary">
-  <link rel="stylesheet" href="/styles.css?v=20260509-10">
+  <link rel="stylesheet" href="/styles.css?v=20260509-11">
 
   <script type="application/ld+json">
   {
@@ -775,60 +775,38 @@
           </div>
         </section>
 
-        <div class="hero-topology" aria-label="TeamStation AI nearshore team topology model">
-          <div class="topology-frame">
-            <div class="topology-head">
-              <span>TeamStation AI</span>
-              <strong>Nearshore team topology model</strong>
-            </div>
-            <div class="topology-map">
-              <svg class="topology-flow" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
-                <path class="flow-track" d="M25 22 C25 37 38 42 50 50"></path>
-                <path class="flow-track" d="M75 22 C75 37 62 42 50 50"></path>
-                <path class="flow-track" d="M50 50 C38 60 25 66 25 79"></path>
-                <path class="flow-track" d="M50 50 C62 60 75 66 75 79"></path>
-              </svg>
-              <article class="topology-node node-source">
-                <span aria-hidden="true">
-                  <svg viewBox="0 0 32 32" focusable="false"><use href="#icon-vendors"></use></svg>
-                </span>
-                <h2>Nebula AI</h2>
-                <p>Nebula reads client team topology and maps LATAM talent across role, stack, level, country lane, and alignment signals.</p>
-              </article>
-              <article class="topology-node node-fit">
-                <span aria-hidden="true">
-                  <svg viewBox="0 0 32 32" focusable="false"><use href="#icon-fit-node"></use></svg>
-                </span>
-                <h2>Axiom Cortex</h2>
-                <p>Axiom Cortex checks thinking, communication, pressure handling, and team fit.</p>
-              </article>
-              <article class="topology-core">
-                <span class="topology-core-icon" aria-hidden="true">
-                  <svg viewBox="0 0 32 32" focusable="false"><use href="#icon-architecture"></use></svg>
-                </span>
-                <span class="topology-core-label">Team topology engine</span>
-                <strong>Role, level, risk, and launch plan in one model.</strong>
-              </article>
-              <article class="topology-node node-launch">
-                <span aria-hidden="true">
-                  <svg viewBox="0 0 32 32" focusable="false"><use href="#icon-device"></use></svg>
-                </span>
-                <h2>Secure launch</h2>
-                <p>EOR, payroll, devices, MDM, access, and onboarding path.</p>
-              </article>
-              <article class="topology-node node-govern">
-                <span aria-hidden="true">
-                  <svg viewBox="0 0 32 32" focusable="false"><use href="#icon-controls"></use></svg>
-                </span>
-                <h2>CIO controls</h2>
-                <p>CIO controls cover governance, compliance, replacement path, and operating support.</p>
-              </article>
-            </div>
-            <div class="topology-bottom">
-              <span><b>Plan</b> roles and levels</span>
-              <span><b>Model</b> cost and capacity</span>
-              <span><b>Launch</b> without vendor handoffs</span>
-            </div>
+        <div class="hero-system-panel" aria-label="TeamStation AI nearshore control plane layers">
+          <div class="system-panel-head">
+            <span>TeamStation AI</span>
+            <strong>Human governed control plane</strong>
+          </div>
+          <div class="system-ledger" aria-label="TeamStation AI operating layers">
+            <article>
+              <span>01 / Graph</span>
+              <h3>Nebula Talent Graph</h3>
+              <p>Reads team topology and maps LATAM talent by role, stack, level, country lane, and alignment signals.</p>
+            </article>
+            <article>
+              <span>02 / Science</span>
+              <h3>Axiom Cortex</h3>
+              <p>Checks reasoning, communication, pressure handling, ownership, and team fit before buyer review.</p>
+            </article>
+            <article>
+              <span>03 / Launch</span>
+              <h3>Secure operations</h3>
+              <p>Plans EOR, payroll, devices, MDM, access, onboarding, and cybersecurity before day one.</p>
+            </article>
+            <article>
+              <span>04 / Govern</span>
+              <h3>CIO controls</h3>
+              <p>Shows cost, people, launch risk, security, onboarding, governance, and delivery status in one place.</p>
+            </article>
+          </div>
+          <div class="system-panel-foot">
+            <span>Roles</span>
+            <span>Cost</span>
+            <span>Launch risk</span>
+            <span>Governance</span>
           </div>
         </div>
       </div>
@@ -1164,21 +1142,21 @@
           </div>
         </div>
         <div class="agentic-panel" aria-label="AI team model">
-          <div class="agentic-flow">
+          <div class="agentic-ledger">
             <article>
-              <span aria-hidden="true"><svg focusable="false"><use href="#icon-fit-node"></use></svg></span>
+              <span>Fit</span>
               <strong>Right fit</strong>
               <p>Can this person think, learn, talk clearly, and work under pressure?</p>
             </article>
             <article>
-              <span aria-hidden="true"><svg focusable="false"><use href="#icon-architecture"></use></svg></span>
+              <span>Seat</span>
               <strong>Right seat</strong>
               <p>Should this person plan, build, review, fix, or lead the work?</p>
             </article>
             <article>
-              <span aria-hidden="true"><svg focusable="false"><use href="#icon-data"></use></svg></span>
+              <span>Telemetry</span>
               <strong>What we watch</strong>
-            <p>Workflow telemetry means watching speed, waiting time, rework, incidents, handoffs, and blockers.</p>
+              <p>Workflow telemetry means watching speed, waiting time, rework, incidents, handoffs, and blockers.</p>
             </article>
           </div>
           <div class="agentic-metrics" aria-label="AI team risk signals">
@@ -1231,19 +1209,19 @@
             <li><strong>We launch and support the team.</strong><span>EOR, payroll, devices, MDM, access, and governance.</span></li>
           </ul>
         </div>
-        <div class="map-card os-diagram" aria-label="TeamStation operating model diagram">
-          <div class="os-diagram-head">
+        <div class="operating-ledger-card" aria-label="TeamStation operating model">
+          <div class="operating-ledger-head">
             <span>TeamStation AI OS</span>
             <strong>One accountable path from hiring plan to working team.</strong>
           </div>
-          <ol class="os-pipeline" aria-label="TeamStation operating path">
-            <li><span>Map</span><strong>Nebula Talent Graph + recruiting operators</strong><small>Graph based talent alignment with real human recruiting oversight.</small></li>
-            <li><span>Vet</span><strong>Axiom Cortex + engineering leadership</strong><small>Technical fit, communication, ownership, and delivery readiness.</small></li>
-            <li><span>Plan</span><strong>Team topology system</strong><small>Role mix, capacity, launch planning, and operational stability.</small></li>
-            <li><span>Launch</span><strong>Secure operations</strong><small>Devices, MDM, onboarding, payroll, EOR, and access controls before day one.</small></li>
-            <li><span>Govern</span><strong>Human operated oversight</strong><small>Engineering support, backfill coverage, reporting, governance, and operational continuity.</small></li>
-          </ol>
-          <div class="os-proof-row" aria-label="TeamStation operating proof">
+          <dl class="operating-ledger" aria-label="TeamStation operating path">
+            <div><dt>Map</dt><dd><strong>Nebula Talent Graph + recruiting operators</strong><span>Graph based talent alignment with real human recruiting oversight.</span></dd></div>
+            <div><dt>Vet</dt><dd><strong>Axiom Cortex + engineering leadership</strong><span>Technical fit, communication, ownership, and delivery readiness.</span></dd></div>
+            <div><dt>Plan</dt><dd><strong>Team topology system</strong><span>Role mix, capacity, launch planning, and operational stability.</span></dd></div>
+            <div><dt>Launch</dt><dd><strong>Secure operations</strong><span>Devices, MDM, onboarding, payroll, EOR, and access controls before day one.</span></dd></div>
+            <div><dt>Govern</dt><dd><strong>Human operated oversight</strong><span>Engineering support, backfill coverage, reporting, governance, and operational continuity.</span></dd></div>
+          </dl>
+          <div class="operating-proof-row" aria-label="TeamStation operating proof">
             <span><strong>2.7M+</strong> LATAM profiles</span>
             <span><strong>44</strong> fit signals</span>
             <span><strong>10</strong> country lanes</span>
