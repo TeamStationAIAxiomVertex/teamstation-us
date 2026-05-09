@@ -9713,3 +9713,301 @@ main dd {
 .footer-grid h4 {
   color: rgba(160, 170, 184, 0.7) !important;
 }
+
+/* Professional UI polish pass: hierarchy, contrast, footer structure, and rhythm only. */
+.hero-copy h1 {
+  color: rgba(229, 234, 241, 0.88) !important;
+}
+
+.hero-copy .hero-headline-accent {
+  color: rgba(124, 144, 232, 0.76) !important;
+}
+
+.section-head h2,
+.pain-strip h2,
+.managed-system-head h2,
+.vendor-model-head h2,
+.clarity-head h2,
+.agentic-copy h2,
+.solution-grid h2,
+.topology-section h2,
+.topology-intro h2,
+.proof-band h2,
+.pricing-section h2,
+.roles-section h2,
+.country-lanes-copy h3,
+.comparison-section h2,
+.team-builder h2,
+.faq-intro h2,
+.final-card h2 {
+  color: rgba(211, 218, 227, 0.76) !important;
+}
+
+.section-head h2 .heading-accent,
+.pain-strip h2 .heading-accent,
+.managed-system-head h2 .heading-accent,
+.vendor-model-head h2 .heading-accent,
+.clarity-head h2 .heading-accent,
+.agentic-copy h2 .heading-accent,
+.solution-grid h2 .heading-accent,
+.topology-section h2 .heading-accent,
+.topology-intro h2 .heading-accent,
+.proof-band h2 .heading-accent,
+.pricing-section h2 .heading-accent,
+.roles-section h2 .heading-accent,
+.team-builder h2 .heading-accent,
+.faq-intro h2 .heading-accent,
+.final-card h2 .heading-accent {
+  color: rgba(124, 144, 232, 0.68) !important;
+}
+
+.pain-icons h3,
+.managed-brief-grid strong,
+.managed-system-cards h3,
+.managed-system-flow strong,
+.vendor-model-compare h3,
+.vendor-model-callouts h3,
+.layer-card-grid h3,
+.clarity-no-grid strong,
+.clarity-ops > strong,
+.control-plane-output strong,
+.question-list strong,
+.hero-explainer-grid strong,
+.system-ledger h3,
+.agentic-ledger strong,
+.agentic-metrics strong,
+.operating-truth-strip strong,
+.operating-ledger strong,
+.about-brief-grid strong,
+.experience-grid strong,
+.paper-grid h3,
+.pricing-grid strong,
+.value-grid strong,
+.role-grid h3,
+.country-card strong,
+.security-items h3,
+.comparison [role="cell"]:first-child,
+.faq-list summary {
+  color: rgba(202, 210, 220, 0.72) !important;
+}
+
+.plain-label,
+.eyebrow,
+.mono-label,
+.section-index,
+.enterprise-proof-chips span,
+.pricing-kicker-row span,
+.pricing-grid span,
+.paper-grid span,
+.clarity-no-grid span,
+.system-ledger span,
+.agentic-ledger span,
+.agentic-metrics span,
+.operating-ledger dt,
+.comparison [role="columnheader"] {
+  color: rgba(139, 151, 168, 0.64) !important;
+}
+
+.enterprise-proof-bar {
+  padding: 16px 0 18px !important;
+  border-block: 1px solid rgba(126, 143, 164, 0.11) !important;
+  background: transparent !important;
+}
+
+.enterprise-proof-title {
+  color: rgba(199, 207, 218, 0.72) !important;
+  font-weight: 520 !important;
+}
+
+.enterprise-proof-chips {
+  gap: 8px !important;
+}
+
+.enterprise-proof-chips span {
+  border-color: rgba(126, 143, 164, 0.14) !important;
+  background: rgba(14, 19, 28, 0.34) !important;
+}
+
+.section,
+.pain-strip,
+.topology-section,
+.proof-band,
+.pricing-section,
+.roles-section,
+.comparison-section,
+.team-builder,
+.faq-section {
+  padding-block: clamp(52px, 5.6vw, 82px) !important;
+}
+
+.hero-explainer {
+  padding-block: 22px !important;
+  border-block-color: rgba(126, 143, 164, 0.1) !important;
+}
+
+.managed-system-cards,
+.layer-card-grid,
+.vendor-model-compare,
+.vendor-model-callouts,
+.question-list,
+.role-grid,
+.country-grid,
+.security-items,
+.proof-metrics,
+.value-grid,
+.pricing-grid,
+.faq-list {
+  border-color: rgba(126, 143, 164, 0.13) !important;
+}
+
+.managed-system-cards article,
+.layer-card-grid article,
+.vendor-model-compare article,
+.vendor-model-callouts article,
+.question-list article,
+.role-grid article,
+.country-card,
+.security-items article,
+.proof-metrics article,
+.value-grid article,
+.pricing-grid article,
+.faq-list details {
+  border-color: rgba(126, 143, 164, 0.12) !important;
+}
+
+.site-footer {
+  padding: 50px 0 22px !important;
+  border-top: 1px solid rgba(126, 143, 164, 0.12) !important;
+  background: #070a10 !important;
+  color: rgba(134, 146, 162, 0.72) !important;
+}
+
+.footer-grid {
+  display: grid !important;
+  grid-template-columns: minmax(260px, 1.15fr) repeat(4, minmax(136px, 0.78fr)) !important;
+  gap: clamp(24px, 3.4vw, 48px) !important;
+  align-items: start !important;
+}
+
+.site-footer nav,
+.footer-grid > div {
+  min-width: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.site-footer .footer-brand {
+  gap: 11px !important;
+  color: rgba(191, 200, 212, 0.74) !important;
+  font-family: var(--sans) !important;
+  font-size: 12.5px !important;
+  font-weight: 620 !important;
+  letter-spacing: 0.07em !important;
+  text-transform: uppercase !important;
+}
+
+.site-footer .footer-brand img {
+  width: 38px !important;
+  height: 38px !important;
+  padding: 5px !important;
+  border: 1px solid rgba(126, 143, 164, 0.16) !important;
+  border-radius: 50% !important;
+  background: #f4f6f9 !important;
+}
+
+.site-footer p {
+  max-width: 34ch !important;
+  margin-top: 20px !important;
+  color: rgba(144, 155, 170, 0.72) !important;
+  font-family: var(--sans) !important;
+  font-size: 13.5px !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+}
+
+.site-footer .footer-category-line {
+  max-width: 34ch !important;
+  margin-top: 16px !important;
+  padding-top: 16px !important;
+  border-top: 1px solid rgba(126, 143, 164, 0.12) !important;
+  color: rgba(158, 168, 182, 0.7) !important;
+  font-size: 13.5px !important;
+  font-weight: 480 !important;
+}
+
+.site-footer nav {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.site-footer h2 {
+  margin: 0 0 10px !important;
+  color: rgba(166, 176, 190, 0.66) !important;
+  font-family: var(--sans) !important;
+  font-size: 12.5px !important;
+  font-weight: 560 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.25 !important;
+  text-transform: none !important;
+}
+
+.site-footer a:not(.footer-brand) {
+  max-width: 31ch !important;
+  color: rgba(126, 139, 156, 0.68) !important;
+  font-family: var(--sans) !important;
+  font-size: 12.5px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.42 !important;
+  text-transform: none !important;
+}
+
+.site-footer a:not(.footer-brand):hover {
+  color: rgba(200, 209, 220, 0.84) !important;
+}
+
+.footer-bottom {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  margin-top: 34px !important;
+  padding-top: 17px !important;
+  border-top: 1px solid rgba(126, 143, 164, 0.1) !important;
+  color: rgba(116, 128, 145, 0.66) !important;
+  background: transparent !important;
+  font-family: var(--sans) !important;
+  font-size: 12px !important;
+  line-height: 1.45 !important;
+}
+
+@media (max-width: 1100px) {
+  .footer-grid {
+    grid-template-columns: minmax(240px, 1fr) repeat(2, minmax(180px, 1fr)) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .site-footer nav {
+    gap: 7px !important;
+  }
+
+  .site-footer a:not(.footer-brand),
+  .site-footer p,
+  .site-footer .footer-category-line {
+    max-width: none !important;
+  }
+
+  .footer-bottom {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+  }
+}
