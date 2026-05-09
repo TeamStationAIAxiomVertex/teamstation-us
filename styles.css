@@ -9170,6 +9170,14 @@ main small {
   box-shadow: none !important;
 }
 
+.agentic-ledger-shell {
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
 .agentic-ledger {
   border: 1px solid rgba(126, 143, 164, 0.2) !important;
   background: #0f141d !important;
