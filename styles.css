@@ -6358,14 +6358,15 @@ h3 .heading-accent {
 .about-brief-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  border: 1px solid #243562;
-  background: #11203d;
+  border: 1px solid rgba(126, 143, 164, 0.18);
+  background: #0f141d;
 }
 
 .about-brief-grid article {
-  min-height: 144px;
-  padding: 18px;
-  border-right: 1px solid #243562;
+  min-height: 116px;
+  padding: 16px 18px;
+  border-right: 1px solid rgba(126, 143, 164, 0.16);
+  background: #0f141d;
 }
 
 .about-brief-grid article:last-child {
@@ -6374,23 +6375,24 @@ h3 .heading-accent {
 
 .about-brief-grid span {
   display: block;
-  margin-bottom: 10px;
-  color: #93a0c2;
+  margin-bottom: 12px;
+  color: #687789;
   font-family: var(--mono);
   font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.12em;
+  font-weight: 520;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
 }
 
 .about-brief-grid strong {
   display: block;
-  color: #f5f7ff;
-  font-family: var(--display);
+  max-width: 24ch;
+  color: #aeb8c5;
+  font-family: var(--sans);
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 520;
   letter-spacing: 0;
-  line-height: 1.35;
+  line-height: 1.46;
 }
 
 .topology-section .governed-engine {
@@ -9284,4 +9286,52 @@ main small {
 
 .hero {
   border-bottom: 0 !important;
+}
+
+/* About brief repair: remove hard-coded blue cards and heavy display text. */
+.topology-section .about-brief-grid {
+  border: 1px solid rgba(126, 143, 164, 0.18) !important;
+  background: #0f141d !important;
+}
+
+.topology-section .about-brief-grid article {
+  min-height: 116px !important;
+  padding: 16px 18px !important;
+  border-right: 1px solid rgba(126, 143, 164, 0.16) !important;
+  background: #0f141d !important;
+}
+
+.topology-section .about-brief-grid article:last-child {
+  border-right: 0 !important;
+}
+
+.topology-section .about-brief-grid span {
+  margin-bottom: 12px !important;
+  color: #687789 !important;
+  font-family: var(--mono) !important;
+  font-size: 10px !important;
+  font-weight: 520 !important;
+  letter-spacing: 0.11em !important;
+}
+
+.topology-section .about-brief-grid strong {
+  max-width: 24ch !important;
+  color: #aeb8c5 !important;
+  font-family: var(--sans) !important;
+  font-size: 15px !important;
+  font-weight: 520 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.46 !important;
+}
+
+@media (max-width: 720px) {
+  .topology-section .about-brief-grid article {
+    min-height: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(126, 143, 164, 0.16) !important;
+  }
+
+  .topology-section .about-brief-grid article:last-child {
+    border-bottom: 0 !important;
+  }
 }
