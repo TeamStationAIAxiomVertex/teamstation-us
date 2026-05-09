@@ -6067,3 +6067,225 @@ h3 .heading-accent {
     border-bottom: 0;
   }
 }
+
+/* Managed nearshore system section */
+.control-plane-shell {
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.managed-system-head {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  border-bottom: 1px solid var(--line);
+}
+
+.managed-system-head > div {
+  padding: 38px;
+}
+
+.managed-system-head > div:first-child {
+  border-right: 1px solid var(--line);
+}
+
+.managed-system-head h2 {
+  max-width: 12ch;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+.managed-system-copy {
+  display: grid;
+  align-content: center;
+  gap: 12px;
+}
+
+.managed-system-copy p {
+  max-width: 68ch;
+  color: var(--text);
+}
+
+.control-plane-definition {
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-weight: 700;
+}
+
+.managed-system-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-bottom: 1px solid var(--line);
+}
+
+.managed-system-cards article {
+  min-height: 270px;
+  padding: 22px;
+  border-right: 1px solid var(--line);
+}
+
+.managed-system-cards article:last-child {
+  border-right: 0;
+}
+
+.managed-card-index,
+.managed-system-flow span {
+  display: block;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.managed-card-icon {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 0 18px;
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.managed-card-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+}
+
+.managed-system-cards h3 {
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.12;
+}
+
+.managed-system-cards p {
+  max-width: 36ch;
+  margin-top: 10px;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.managed-system-flow {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr) minmax(0, 0.95fr);
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.managed-system-flow article {
+  padding: 22px;
+  border-right: 1px solid var(--line);
+}
+
+.managed-system-flow article:last-child {
+  border-right: 0;
+}
+
+.managed-system-flow ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 0;
+  list-style: none;
+}
+
+.managed-system-flow li {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+  padding: 9px 10px;
+}
+
+.managed-system-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 28px;
+  background: var(--navy);
+  color: #f6f7f9;
+}
+
+.managed-system-callout strong {
+  color: #f6f7f9;
+  font-family: var(--display);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.05;
+}
+
+.managed-system-callout .button {
+  border-color: #f6f7f9 !important;
+  background: #f6f7f9 !important;
+  color: var(--ink) !important;
+}
+
+@media (max-width: 1080px) {
+  .managed-system-head,
+  .managed-system-cards,
+  .managed-system-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .managed-system-head > div:first-child,
+  .managed-system-cards article,
+  .managed-system-flow article {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .managed-system-cards article:last-child,
+  .managed-system-flow article:last-child {
+    border-bottom: 0;
+  }
+
+  .managed-system-head h2 {
+    max-width: 18ch;
+  }
+}
+
+@media (max-width: 720px) {
+  .managed-system-head > div,
+  .managed-system-cards article,
+  .managed-system-flow article,
+  .managed-system-callout {
+    padding: 22px;
+  }
+
+  .managed-system-head h2 {
+    font-size: 34px;
+  }
+
+  .managed-system-cards article {
+    min-height: 0;
+  }
+
+  .managed-system-callout {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .managed-system-callout strong {
+    font-size: 24px;
+  }
+}
