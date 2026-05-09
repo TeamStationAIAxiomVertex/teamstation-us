@@ -9496,14 +9496,21 @@ main dd {
 }
 
 .pain-icons h3,
+.managed-brief-grid strong,
 .managed-system-cards h3,
+.managed-system-flow strong,
 .vendor-model-compare h3,
 .vendor-model-callouts h3,
 .layer-card-grid h3,
+.clarity-no-grid strong,
+.clarity-ops > strong,
+.control-plane-output strong,
 .question-list strong,
+.hero-explainer-grid strong,
 .system-ledger h3,
 .agentic-ledger strong,
 .agentic-metrics strong,
+.operating-truth-strip strong,
 .operating-ledger strong,
 .about-brief-grid strong,
 .experience-grid strong,
@@ -9610,4 +9617,99 @@ main dd {
 #agentic-ai .agentic-metrics div {
   min-height: 42px !important;
   padding: 10px 14px !important;
+}
+
+/* Header contrast correction only: color values, no type or layout changes. */
+.hero-copy h1 {
+  color: rgba(235, 238, 242, 0.92) !important;
+}
+
+.hero-copy .hero-headline-accent {
+  color: rgba(132, 151, 255, 0.86) !important;
+}
+
+.section-head h2,
+.pain-strip h2,
+.managed-system-head h2,
+.vendor-model-head h2,
+.clarity-head h2,
+.agentic-copy h2,
+.solution-grid h2,
+.topology-section h2,
+.topology-intro h2,
+.proof-band h2,
+.pricing-section h2,
+.roles-section h2,
+.country-lanes-copy h3,
+.comparison-section h2,
+.team-builder h2,
+.faq-intro h2,
+.final-card h2 {
+  color: rgba(218, 224, 232, 0.82) !important;
+}
+
+.section-head h2 .heading-accent,
+.pain-strip h2 .heading-accent,
+.managed-system-head h2 .heading-accent,
+.vendor-model-head h2 .heading-accent,
+.clarity-head h2 .heading-accent,
+.agentic-copy h2 .heading-accent,
+.solution-grid h2 .heading-accent,
+.topology-section h2 .heading-accent,
+.topology-intro h2 .heading-accent,
+.proof-band h2 .heading-accent,
+.pricing-section h2 .heading-accent,
+.roles-section h2 .heading-accent,
+.team-builder h2 .heading-accent,
+.faq-intro h2 .heading-accent,
+.final-card h2 .heading-accent {
+  color: rgba(132, 151, 255, 0.78) !important;
+}
+
+.pain-icons h3,
+.managed-system-cards h3,
+.vendor-model-compare h3,
+.vendor-model-callouts h3,
+.layer-card-grid h3,
+.question-list strong,
+.system-ledger h3,
+.agentic-ledger strong,
+.agentic-metrics strong,
+.operating-ledger strong,
+.about-brief-grid strong,
+.experience-grid strong,
+.paper-grid h3,
+.pricing-grid strong,
+.value-grid strong,
+.role-grid h3,
+.country-card strong,
+.security-items h3,
+.comparison [role="cell"]:first-child,
+.faq-list summary {
+  color: rgba(210, 216, 224, 0.78) !important;
+}
+
+.proof-metrics strong,
+.pricing-hero strong,
+.enterprise-proof-title {
+  color: rgba(218, 224, 232, 0.82) !important;
+}
+
+.plain-label,
+.eyebrow,
+.mono-label,
+.section-index,
+.brand .name small,
+.enterprise-proof-chips span,
+.pricing-kicker-row span,
+.pricing-grid span,
+.paper-grid span,
+.clarity-no-grid span,
+.system-ledger span,
+.agentic-ledger span,
+.agentic-metrics span,
+.operating-ledger dt,
+.comparison [role="columnheader"],
+.footer-grid h4 {
+  color: rgba(160, 170, 184, 0.7) !important;
 }
