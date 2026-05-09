@@ -8498,3 +8498,319 @@ textarea,
   color: var(--muted) !important;
   font-weight: 500 !important;
 }
+
+/* Visual hierarchy correction: reduce glare, weight, and section dominance. */
+:root {
+  --ink: #dce2ea;
+  --ink-soft: #cbd4df;
+  --text: #aeb7c3;
+  --text-2: #929daa;
+  --muted: #687483;
+  --line: #222a35;
+  --hairline: #222a35;
+  --hairline-2: #2c3542;
+  --surface: #10141b;
+  --soft: #121720;
+  --soft-2: #151b25;
+  --panel: #10141b;
+  --panel-alt: #121720;
+  --blue: #7f98b1;
+  --blue-2: #96aabd;
+  --electric: #96aabd;
+}
+
+body {
+  color: var(--text) !important;
+}
+
+main p,
+main li,
+main dd,
+main small,
+.body-large,
+.lead,
+.lede,
+.section-head p:not(.plain-label),
+.section-context,
+.context-link-line,
+.pricing-note,
+.research-note,
+.country-source,
+.faq-list p {
+  color: var(--text) !important;
+  font-weight: 400 !important;
+}
+
+.hero-copy h1 {
+  color: #eef2f6 !important;
+  max-width: 13ch !important;
+  font-size: clamp(40px, 4.7vw, 58px) !important;
+  font-weight: 760 !important;
+  letter-spacing: -0.018em !important;
+  line-height: 1 !important;
+}
+
+.section-head h2,
+.pain-strip h2,
+.managed-system-head h2,
+.vendor-model-head h2,
+.clarity-head h2,
+.agentic-copy h2,
+.solution-grid h2,
+.topology-section h2,
+.topology-intro h2,
+.proof-band h2,
+.pricing-section h2,
+.roles-section h2,
+.team-builder h2,
+.faq-intro h2,
+.final-card h2 {
+  color: var(--ink) !important;
+  font-size: clamp(24px, 2.5vw, 36px) !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.08 !important;
+}
+
+.pain-icons h3,
+.managed-system-cards h3,
+.vendor-model-compare h3,
+.vendor-model-callouts h3,
+.question-list strong,
+.system-ledger h3,
+.agentic-ledger strong,
+.operating-ledger strong,
+.about-brief-grid strong,
+.experience-grid strong,
+.paper-grid h3,
+.role-grid h3,
+.country-card strong,
+.security-items h3,
+.faq-list summary,
+.comparison [role="cell"]:first-child {
+  color: var(--ink-soft) !important;
+  font-weight: 600 !important;
+}
+
+.pricing-hero strong {
+  color: var(--ink) !important;
+  font-size: clamp(36px, 4vw, 46px) !important;
+  font-weight: 680 !important;
+  letter-spacing: -0.014em !important;
+}
+
+.pricing-grid strong,
+.proof-metrics strong,
+.operating-proof-row strong {
+  color: var(--ink-soft) !important;
+  font-weight: 650 !important;
+}
+
+.rate-math b,
+.pricing-grid b {
+  color: var(--ink-soft) !important;
+  font-weight: 600 !important;
+}
+
+.rate-math small,
+.pricing-grid small {
+  color: var(--text-2) !important;
+}
+
+.plain-label,
+.eyebrow,
+.mono-label,
+.section-index,
+.brand .name small,
+.nav-links,
+.enterprise-proof-chips span,
+.pricing-kicker-row span,
+.pricing-grid span,
+.paper-grid span,
+.clarity-no-grid span,
+.system-ledger span,
+.agentic-ledger span,
+.operating-ledger dt,
+.comparison [role="columnheader"],
+.footer-grid h4 {
+  color: var(--muted) !important;
+  font-weight: 500 !important;
+}
+
+.section,
+.pain-strip,
+.hero-explainer,
+.control-plane-section,
+.agentic-section,
+.sandler,
+.solution-section,
+.topology-section,
+.proof-band,
+.pricing-section,
+.roles-section,
+.comparison-section,
+.team-builder,
+.security-section,
+.faq-section,
+.final-cta {
+  padding-top: clamp(48px, 5vw, 76px) !important;
+  padding-bottom: clamp(48px, 5vw, 76px) !important;
+}
+
+.hero {
+  padding-top: clamp(56px, 5.5vw, 84px) !important;
+  padding-bottom: clamp(42px, 4.4vw, 64px) !important;
+}
+
+.hero-grid,
+.agentic-grid,
+.solution-grid,
+.builder-grid,
+.security-grid,
+.sandler-grid {
+  gap: clamp(28px, 4vw, 54px) !important;
+}
+
+.section-head {
+  margin-bottom: clamp(24px, 3vw, 40px) !important;
+}
+
+.hero-topology,
+.hero-system-panel,
+.topology-frame,
+.topology-node,
+.topology-core,
+.topology-bottom span,
+.hero-explainer-grid article,
+.pain-icons article,
+.managed-system-head,
+.managed-brief-grid article,
+.control-plane-definition,
+.talent-graph-note,
+.layer-card-grid,
+.layer-card-grid article,
+.managed-system-cards article,
+.managed-system-flow article,
+.managed-system-callout,
+.vendor-model-section,
+.vendor-model-head,
+.vendor-model-compare article,
+.vendor-model-callouts article,
+.vendor-model-cta,
+.clarity-shell,
+.clarity-body,
+.clarity-no-grid article,
+.clarity-ops,
+.agentic-panel,
+.agentic-ledger,
+.agentic-ledger article,
+.agentic-metrics div,
+.question-list article,
+.sandler-detail .context-link-line,
+.operating-ledger-card,
+.operating-ledger div,
+.operating-proof-row span,
+.about-brief-grid article,
+.experience-grid article,
+.topology-note,
+.proof-metrics article,
+.research-proof,
+.paper-grid article,
+.pricing-hero,
+.pricing-hero > div,
+.pricing-hero ul,
+.pricing-grid article,
+.rate-math p,
+.pricing-includes span,
+.value-grid article,
+.role-grid article,
+.country-lanes,
+.country-card,
+.comparison,
+.comparison [role="row"],
+.comparison [role="cell"],
+.comparison [role="columnheader"],
+.team-builder-panel,
+.plan-card,
+.handoff-card,
+.security-items article,
+.security-icon,
+.faq-list,
+.faq-list details,
+.site-footer nav,
+.footer-grid > div {
+  border-color: rgba(126, 143, 164, 0.18) !important;
+  box-shadow: none !important;
+}
+
+.pain-icons article,
+.role-grid article,
+.pricing-grid article,
+.value-grid article,
+.paper-grid article,
+.security-items article,
+.question-list article {
+  padding: clamp(16px, 1.6vw, 22px) !important;
+}
+
+.enterprise-proof-bar {
+  border-color: rgba(126, 143, 164, 0.18) !important;
+}
+
+.enterprise-proof-title {
+  min-height: 0 !important;
+  padding: 11px 16px !important;
+  color: var(--ink-soft) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.055em !important;
+}
+
+.enterprise-proof-chips span {
+  min-height: 36px !important;
+  padding: 10px 12px !important;
+  color: var(--muted) !important;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.05em !important;
+}
+
+.button,
+.button-small,
+.button-secondary,
+.button-document,
+.button-light,
+.pricing-guide-button,
+.button-copy {
+  color: var(--ink-soft) !important;
+  font-weight: 600 !important;
+  border-color: rgba(126, 143, 164, 0.24) !important;
+}
+
+.final-card h2 {
+  font-size: clamp(28px, 3vw, 42px) !important;
+}
+
+@media (max-width: 720px) {
+  .hero-copy h1 {
+    font-size: 36px !important;
+  }
+
+  .section-head h2,
+  .pain-strip h2,
+  .managed-system-head h2,
+  .vendor-model-head h2,
+  .clarity-head h2,
+  .agentic-copy h2,
+  .solution-grid h2,
+  .topology-section h2,
+  .topology-intro h2,
+  .proof-band h2,
+  .pricing-section h2,
+  .roles-section h2,
+  .team-builder h2,
+  .faq-intro h2,
+  .final-card h2 {
+    font-size: 27px !important;
+  }
+}
