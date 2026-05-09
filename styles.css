@@ -10143,3 +10143,8 @@ main dd {
     top: 12px !important;
   }
 }
+
+/* Remove the stray divider between the explainer strip and the pain section. */
+.hero-explainer + .pain-strip {
+  border-top: 0 !important;
+}
