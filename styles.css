@@ -8477,6 +8477,14 @@ textarea,
   display: none !important;
 }
 
+.pain-icons article::before {
+  display: none !important;
+}
+
+.pain-icons p {
+  color: var(--text) !important;
+}
+
 .security-icon {
   background-image: none !important;
   border-radius: 0 !important;
