@@ -6580,6 +6580,26 @@ h3 .heading-accent {
   background: var(--surface);
 }
 
+.managed-brief-icon {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-style: normal;
+}
+
+.managed-brief-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+}
+
 .managed-brief-grid article:nth-child(2n) {
   border-right: 0;
 }
@@ -6609,10 +6629,16 @@ h3 .heading-accent {
 
 .control-plane-definition {
   display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  align-items: start;
   gap: 8px;
   padding: 16px 18px;
   border: 1px solid var(--line);
   background: var(--bg);
+}
+
+.control-plane-definition .definition-icon {
+  margin-bottom: 0;
 }
 
 .control-plane-definition p {
