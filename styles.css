@@ -8429,3 +8429,64 @@ textarea,
     font-size: 15px !important;
   }
 }
+
+/* Surgical dark-surface repair. Do not layer a new design system here. */
+.sandler-detail .context-link-line,
+.agentic-metrics div,
+.comparison,
+.comparison [role="row"],
+.comparison [role="cell"],
+.comparison [role="columnheader"],
+.team-builder .button,
+.team-builder .button-secondary,
+.team-builder .button-copy,
+#booking-link,
+.security-icon {
+  border-color: var(--line) !important;
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  box-shadow: none !important;
+}
+
+.comparison-head [role="columnheader"],
+.comparison [role="cell"]:first-child,
+.team-builder .button,
+#booking-link {
+  color: var(--ink) !important;
+}
+
+.comparison [role="cell"]:last-child,
+.comparison [role="columnheader"]:last-child {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+}
+
+.faq-intro p:not(.plain-label) {
+  color: var(--text) !important;
+}
+
+.team-builder .button:hover,
+.team-builder .button-secondary:hover,
+.team-builder .button-copy:hover,
+#booking-link:hover {
+  background: var(--navy-2) !important;
+  color: var(--ink) !important;
+}
+
+.security-items article::before {
+  display: none !important;
+}
+
+.security-icon {
+  background-image: none !important;
+  border-radius: 0 !important;
+}
+
+.faq-list summary::after {
+  width: auto !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--muted) !important;
+  font-weight: 500 !important;
+}
