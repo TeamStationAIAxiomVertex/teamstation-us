@@ -7518,3 +7518,360 @@ h3 .heading-accent {
     font-size: 16px;
   }
 }
+
+/* TeamStation AI SDD non-drift operating layer. */
+:root {
+  --bg: #0b0d12;
+  --surface: #10131a;
+  --soft: #151923;
+  --soft-2: #1b202b;
+  --ink: #f3f5f8;
+  --text: #c7ccd4;
+  --muted: #858d9a;
+  --line: #2b313c;
+  --blue: #7e9bb8;
+  --blue-2: #9aafc4;
+  --navy: #0b0d12;
+  --navy-2: #151923;
+  --electric: #9aafc4;
+  --shadow: none;
+  --shadow-soft: none;
+}
+
+html,
+body {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+body {
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+
+.site-header {
+  background: rgba(11, 13, 18, 0.94) !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+.brand,
+.nav-links,
+.nav-links a,
+.site-header .button-small {
+  color: var(--ink) !important;
+}
+
+.brand .name small,
+.plain-label,
+.eyebrow,
+.mono-label,
+.section-index,
+.nav-links,
+.enterprise-proof-chips span,
+.layer-card-grid span {
+  color: var(--muted) !important;
+}
+
+.hero,
+.section,
+.pain-strip,
+.hero-explainer,
+.control-plane-section,
+.solution-section,
+.topology-section,
+.pricing-section,
+.builder-section,
+.faq-section,
+.site-footer {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+.hero {
+  padding: clamp(52px, 5.2vw, 82px) 0 clamp(36px, 4vw, 58px) !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+.hero-grid {
+  gap: clamp(26px, 3.4vw, 46px) !important;
+}
+
+.hero-copy h1 {
+  max-width: 11.5ch;
+  color: var(--ink) !important;
+  font-size: clamp(42px, 5.1vw, 64px) !important;
+  font-weight: 850 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 0.98 !important;
+}
+
+.hero-headline-accent,
+.heading-accent,
+.hero-copy h1 em,
+.section-head h2 em {
+  color: var(--ink) !important;
+}
+
+.lead,
+.body-large,
+.section-head p:not(.plain-label),
+.section-context,
+.topology-node p,
+.managed-system-copy p,
+.managed-system-cards p,
+.managed-system-flow li,
+.faq-list p,
+.enterprise-proof-head p:not(.plain-label),
+.enterprise-proof-callout p {
+  color: var(--text) !important;
+}
+
+.button,
+.button-small,
+.button-secondary,
+.button-document,
+.managed-system-cta .button,
+.managed-system-callout .button,
+.vendor-model-cta .button,
+.final-cta .button,
+.pricing-hero .button {
+  min-height: 36px !important;
+  border: 1px solid var(--line) !important;
+  background: #11151e !important;
+  color: var(--ink) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.button-secondary,
+.managed-system-cta .button-secondary,
+.managed-system-callout .button-secondary,
+.vendor-model-cta .button-secondary,
+.final-cta .button-secondary {
+  background: transparent !important;
+}
+
+.hero-topology,
+.topology-frame,
+.topology-head,
+.topology-map,
+.topology-node,
+.topology-core,
+.topology-bottom span,
+.hero-explainer-grid article,
+.pain-icons article,
+.managed-system-head,
+.managed-brief-grid article,
+.control-plane-definition,
+.talent-graph-note,
+.layer-card-grid,
+.layer-card-grid article,
+.managed-system-cards article,
+.managed-system-flow article,
+.vendor-model-section,
+.vendor-model-head,
+.vendor-model-compare article,
+.vendor-model-callouts article,
+.clarity-body,
+.map-card,
+.os-diagram,
+.proof-panel,
+.papers-grid article,
+.role-grid article,
+.country-zone,
+.faq-list,
+.faq-list details,
+.team-builder-panel,
+.plan-card,
+.pricing-hero,
+.tiers article,
+.value-grid article,
+.compare,
+.site-footer nav {
+  border-color: var(--line) !important;
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  box-shadow: none !important;
+}
+
+.topology-core,
+.pricing-hero,
+.final-cta,
+.enterprise-proof-bar,
+.vendor-model-cta {
+  background: #0d1017 !important;
+}
+
+.topology-head,
+.topology-bottom,
+.hero-explainer-grid,
+.managed-system-flow,
+.managed-system-signal-strip,
+.os-proof-row,
+.footer-bottom {
+  border-color: var(--line) !important;
+}
+
+.topology-node h2,
+.topology-core strong,
+.pain-icons h3,
+.managed-system-head h2,
+.managed-system-cards h3,
+.vendor-model-head h2,
+.section-head h2,
+.pain-strip h2,
+.solution-grid h2,
+.topology-section h2,
+.pricing-hero strong,
+.faq-list summary,
+.layer-card-grid p,
+.enterprise-proof-head h2,
+.enterprise-proof-callout strong {
+  color: var(--ink) !important;
+}
+
+.section-head h2,
+.pain-strip h2,
+.managed-system-head h2,
+.solution-grid h2,
+.topology-section h2,
+.vendor-model-head h2,
+.clarity-head h2,
+.pricing-hero strong {
+  font-size: clamp(30px, 3.2vw, 46px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.015em !important;
+}
+
+.enterprise-proof-bar {
+  border-color: var(--line) !important;
+  color: var(--text) !important;
+}
+
+.enterprise-proof-head {
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr) !important;
+  gap: 24px !important;
+  padding: 22px 24px !important;
+  border-bottom-color: var(--line) !important;
+  background-color: #0d1017 !important;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px) !important;
+  background-size: 42px 42px !important;
+}
+
+.enterprise-proof-head h2 {
+  max-width: 16ch !important;
+  font-size: clamp(30px, 3vw, 38px) !important;
+  font-weight: 850 !important;
+  line-height: 1.02 !important;
+}
+
+.enterprise-proof-head p:not(.plain-label) {
+  max-width: 62ch !important;
+  font-size: 15px !important;
+  font-weight: 650 !important;
+  line-height: 1.5 !important;
+}
+
+.enterprise-proof-callout {
+  grid-template-columns: minmax(0, 0.42fr) minmax(0, 1fr) !important;
+  gap: 22px !important;
+  padding: 20px 24px !important;
+  border-bottom-color: var(--line) !important;
+  background: #0b0d12 !important;
+}
+
+.enterprise-proof-callout strong {
+  font-size: clamp(22px, 2vw, 28px) !important;
+}
+
+.enterprise-proof-chips {
+  padding: 16px 24px 18px !important;
+  gap: 8px !important;
+}
+
+.enterprise-proof-chips span {
+  border-color: var(--line) !important;
+  background: transparent !important;
+  color: var(--text) !important;
+}
+
+.layer-card-grid {
+  margin: 18px 38px 0 !important;
+}
+
+.layer-card-grid article {
+  min-height: 136px !important;
+  padding: 18px !important;
+}
+
+.layer-card-grid p {
+  font-size: 15.5px !important;
+  line-height: 1.32 !important;
+}
+
+.topology-flow,
+.flow-track,
+.flow-signal,
+.flow-token,
+.hero .topology-node span::after,
+.hero .topology-core-icon::after,
+.hero .topology-core::after,
+.hero .topology-bottom span::after {
+  display: none !important;
+}
+
+svg {
+  color: currentColor;
+}
+
+@media (max-width: 1080px) {
+  .hero-copy h1 {
+    font-size: clamp(40px, 8vw, 56px) !important;
+  }
+
+  .enterprise-proof-head,
+  .enterprise-proof-callout {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 15px;
+  }
+
+  .hero {
+    padding: 44px 0 34px !important;
+  }
+
+  .hero-copy h1 {
+    font-size: 38px !important;
+    line-height: 1.02 !important;
+  }
+
+  .section-head h2,
+  .pain-strip h2,
+  .managed-system-head h2,
+  .solution-grid h2,
+  .topology-section h2,
+  .vendor-model-head h2,
+  .clarity-head h2 {
+    font-size: 30px !important;
+  }
+
+  .enterprise-proof-head,
+  .enterprise-proof-callout,
+  .enterprise-proof-chips {
+    padding: 18px !important;
+  }
+
+  .enterprise-proof-head h2 {
+    font-size: 28px !important;
+  }
+
+  .layer-card-grid {
+    margin: 16px 0 0 !important;
+  }
+}
