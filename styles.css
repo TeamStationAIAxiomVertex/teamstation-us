@@ -5542,65 +5542,6 @@ input,
   color: #f6f7f9 !important;
 }
 
-.control-plane-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
-  gap: 48px;
-  align-items: stretch;
-}
-
-.control-plane-grid > div,
-.control-plane-list {
-  min-height: 100%;
-}
-
-.control-plane-grid .button {
-  margin-top: 28px;
-}
-
-.control-plane-grid p + p {
-  margin-top: 14px;
-}
-
-.control-plane-list {
-  display: grid;
-  gap: 0;
-  margin: 0;
-  padding: 0;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  list-style: none;
-}
-
-.control-plane-list li {
-  display: grid;
-  gap: 7px;
-  padding: 22px;
-  border-bottom: 1px solid var(--line);
-}
-
-.control-plane-list li:last-child {
-  border-bottom: 0;
-}
-
-.control-plane-list strong {
-  color: var(--ink);
-  font-size: 17px;
-  line-height: 1.35;
-}
-
-.control-plane-list span {
-  color: var(--text);
-  font-size: 14px;
-  line-height: 1.55;
-}
-
-@media (max-width: 980px) {
-  .control-plane-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .os-diagram {
   padding: 18px !important;
 }
@@ -5791,5 +5732,312 @@ input,
 
   .os-diagram-head strong {
     text-align: left;
+  }
+}
+
+/* Typography and control plane repair */
+body {
+  font-family: var(--sans);
+}
+
+.hero-copy h1 {
+  max-width: 760px;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 76px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.hero-headline-accent {
+  display: block;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.section-head h2,
+.control-plane-copy h2,
+.topology-intro h2,
+.team-builder h2,
+.faq-intro h2,
+.final-card h2,
+.country-lanes-copy h3,
+.proof-band h2 {
+  font-family: var(--display);
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+.plain-label,
+.hero-copy::before,
+.nav-links,
+.button,
+.brand small,
+.control-plane-panel-head span,
+.stack-index,
+.control-plane-output span {
+  font-family: var(--mono);
+}
+
+.control-plane-section {
+  background: var(--surface) !important;
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+}
+
+.control-plane-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1.05fr);
+  gap: 0;
+  align-items: stretch;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.control-plane-copy {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  padding: 38px;
+  border-right: 1px solid var(--line);
+}
+
+.control-plane-copy .plain-label {
+  margin-bottom: 16px;
+}
+
+.control-plane-copy h2 {
+  max-width: 12ch;
+  margin-bottom: 22px;
+  color: var(--ink);
+  font-size: 52px;
+}
+
+.control-plane-copy p {
+  max-width: 68ch;
+  color: var(--text);
+}
+
+.control-plane-copy p + p {
+  margin-top: 14px;
+}
+
+.control-plane-actions {
+  margin-top: auto;
+  padding-top: 28px;
+}
+
+.control-plane-panel {
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: auto 1fr auto;
+  background: var(--bg) !important;
+}
+
+.control-plane-panel-head {
+  display: flex;
+  min-height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 22px;
+  border-bottom: 1px solid #343b49;
+  background: var(--navy);
+  color: #f6f7f9;
+}
+
+.control-plane-panel-head span {
+  color: #aeb6c4;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.control-plane-panel-head strong {
+  max-width: 28ch;
+  color: #f6f7f9;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: right;
+}
+
+.control-plane-stack {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  background: var(--surface);
+  list-style: none;
+}
+
+.control-plane-stack li {
+  display: grid;
+  min-height: 142px;
+  grid-template-columns: 46px 54px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  padding: 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.control-plane-stack li:last-child {
+  border-bottom: 0;
+}
+
+.stack-index {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.stack-icon {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.stack-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+}
+
+.control-plane-stack strong {
+  display: block;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.15;
+}
+
+.control-plane-stack p {
+  max-width: 50ch;
+  margin-top: 8px;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.control-plane-stack a {
+  color: var(--ink);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.control-plane-output {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.control-plane-output article {
+  min-height: 96px;
+  padding: 16px;
+  border-right: 1px solid var(--line);
+}
+
+.control-plane-output article:last-child {
+  border-right: 0;
+}
+
+.control-plane-output span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.control-plane-output strong {
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+@media (max-width: 1080px) {
+  .hero-copy h1 {
+    font-size: 64px;
+  }
+
+  .control-plane-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .control-plane-copy {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .control-plane-copy h2 {
+    max-width: 18ch;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-copy h1 {
+    font-size: 44px;
+    line-height: 1.08;
+  }
+
+  .hero-headline-accent {
+    display: inline;
+  }
+
+  .control-plane-copy,
+  .control-plane-stack li {
+    padding: 22px;
+  }
+
+  .control-plane-copy h2 {
+    font-size: 34px;
+  }
+
+  .control-plane-panel-head,
+  .control-plane-stack li,
+  .control-plane-output {
+    grid-template-columns: 1fr;
+  }
+
+  .control-plane-panel-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .control-plane-panel-head strong {
+    text-align: left;
+  }
+
+  .control-plane-stack li {
+    min-height: 0;
+  }
+
+  .control-plane-output article {
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .control-plane-output article:last-child {
+    border-bottom: 0;
   }
 }
