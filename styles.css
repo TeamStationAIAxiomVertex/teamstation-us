@@ -9457,3 +9457,108 @@ main small {
     flex-direction: column !important;
   }
 }
+
+/* Typography scale correction only: keep fonts, colors, layout, and content intact. */
+.hero-copy h1 {
+  font-size: clamp(48px, 5.8vw, 72px) !important;
+  line-height: 0.98 !important;
+}
+
+.hero-copy .lead {
+  font-size: clamp(18px, 1.35vw, 21px) !important;
+  line-height: 1.54 !important;
+}
+
+main p,
+main li,
+main dd {
+  font-size: clamp(15.8px, 1.05vw, 16.6px) !important;
+}
+
+.section-head h2,
+.pain-strip h2,
+.managed-system-head h2,
+.vendor-model-head h2,
+.clarity-head h2,
+.agentic-copy h2,
+.solution-grid h2,
+.topology-section h2,
+.topology-intro h2,
+.proof-band h2,
+.pricing-section h2,
+.roles-section h2,
+.country-lanes-copy h3,
+.comparison-section h2,
+.team-builder h2,
+.faq-intro h2,
+.final-card h2 {
+  font-size: clamp(28px, 2.95vw, 42px) !important;
+}
+
+.pain-icons h3,
+.managed-system-cards h3,
+.vendor-model-compare h3,
+.vendor-model-callouts h3,
+.layer-card-grid h3,
+.question-list strong,
+.system-ledger h3,
+.agentic-ledger strong,
+.agentic-metrics strong,
+.operating-ledger strong,
+.about-brief-grid strong,
+.experience-grid strong,
+.paper-grid h3,
+.pricing-grid strong,
+.value-grid strong,
+.role-grid h3,
+.country-card strong,
+.security-items h3,
+.comparison [role="cell"]:first-child {
+  font-size: clamp(16.5px, 1.18vw, 18.5px) !important;
+}
+
+.faq-list summary {
+  font-size: clamp(17px, 1.2vw, 19px) !important;
+}
+
+.proof-metrics strong,
+.pricing-hero strong {
+  font-size: clamp(42px, 4.5vw, 54px) !important;
+}
+
+.hero-explainer-grid strong,
+.operating-truth-strip strong,
+.control-plane-output strong,
+.managed-system-flow strong,
+.pricing-includes span,
+.enterprise-proof-title {
+  font-size: clamp(15.5px, 1.05vw, 17px) !important;
+}
+
+@media (max-width: 720px) {
+  .hero-copy h1 {
+    font-size: 44px !important;
+  }
+
+  .hero-copy .lead {
+    font-size: 17px !important;
+  }
+
+  .section-head h2,
+  .pain-strip h2,
+  .managed-system-head h2,
+  .vendor-model-head h2,
+  .clarity-head h2,
+  .agentic-copy h2,
+  .solution-grid h2,
+  .topology-section h2,
+  .topology-intro h2,
+  .proof-band h2,
+  .pricing-section h2,
+  .roles-section h2,
+  .team-builder h2,
+  .faq-intro h2,
+  .final-card h2 {
+    font-size: 31px !important;
+  }
+}
