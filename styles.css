@@ -6179,6 +6179,11 @@ h3 .heading-accent {
   line-height: 1.55;
 }
 
+.managed-system-cards .managed-card-note {
+  color: var(--ink);
+  font-weight: 800;
+}
+
 .managed-system-flow {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr) minmax(0, 0.95fr);
