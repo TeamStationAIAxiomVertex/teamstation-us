@@ -9019,3 +9019,89 @@ main small {
 .research-proof a {
   color: var(--blue-2) !important;
 }
+
+/* Footer contrast correction: keep the bottom quiet, not high-glare. */
+.final-cta {
+  border-top: 1px solid rgba(114, 128, 151, 0.16) !important;
+  background: #080b12 !important;
+}
+
+.final-card h2 {
+  color: #a8b3c1 !important;
+  font-weight: 560 !important;
+}
+
+.final-card .heading-accent {
+  color: #6c83de !important;
+}
+
+.final-card p {
+  color: #728097 !important;
+  font-weight: 400 !important;
+}
+
+.final-cta .button-light {
+  border-color: rgba(108, 131, 222, 0.24) !important;
+  background: transparent !important;
+  color: #8793a4 !important;
+}
+
+.final-cta .button-light:hover {
+  border-color: rgba(124, 146, 224, 0.36) !important;
+  background: #0c111b !important;
+  color: #9aa6b6 !important;
+}
+
+.site-footer {
+  border-top: 1px solid rgba(114, 128, 151, 0.16) !important;
+  background: #080b12 !important;
+  color: #728097 !important;
+}
+
+.site-footer nav {
+  border-color: rgba(114, 128, 151, 0.13) !important;
+  background: #0b0f17 !important;
+}
+
+.site-footer .brand,
+.site-footer .brand span {
+  color: #9ba6b5 !important;
+  font-weight: 650 !important;
+}
+
+.site-footer h2 {
+  color: #8793a3 !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+}
+
+.site-footer p,
+.site-footer .footer-category-line {
+  color: #728097 !important;
+  font-size: 13.5px !important;
+  font-weight: 400 !important;
+}
+
+.site-footer .footer-category-line {
+  border-top-color: rgba(114, 128, 151, 0.18) !important;
+  color: #778394 !important;
+  font-weight: 560 !important;
+}
+
+.site-footer a {
+  color: #728097 !important;
+  font-size: 12.5px !important;
+  font-weight: 500 !important;
+  line-height: 1.48 !important;
+  text-decoration: none !important;
+  text-decoration-color: transparent !important;
+}
+
+.site-footer a:hover {
+  color: #8996a8 !important;
+}
+
+.footer-bottom {
+  border-top-color: rgba(114, 128, 151, 0.14) !important;
+  color: #728097 !important;
+}
