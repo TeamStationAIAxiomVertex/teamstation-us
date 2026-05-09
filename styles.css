@@ -10011,3 +10011,135 @@ main dd {
     flex-direction: column !important;
   }
 }
+
+/* Iconography normalization: one size, one stroke system, one square treatment. */
+.pain-icons span,
+.managed-brief-icon,
+.managed-card-icon,
+.question-icon,
+.role-icon,
+.security-icon {
+  display: inline-flex !important;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  flex: 0 0 40px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  border: 1px solid rgba(126, 143, 164, 0.16) !important;
+  border-radius: 0 !important;
+  background: rgba(15, 20, 29, 0.84) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  color: rgba(124, 144, 232, 0.72) !important;
+  font-style: normal !important;
+}
+
+.pain-icons span svg,
+.managed-brief-icon svg,
+.managed-card-icon svg,
+.question-icon svg,
+.role-icon svg,
+.security-icon svg {
+  width: 18px !important;
+  height: 18px !important;
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: 1.65 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
+
+.managed-brief-icon {
+  margin-bottom: 12px !important;
+}
+
+.managed-card-icon {
+  margin: 16px 0 !important;
+}
+
+.security-icon {
+  margin-bottom: 14px !important;
+}
+
+.question-list article {
+  grid-template-columns: 40px minmax(0, 1fr) !important;
+}
+
+.question-icon {
+  grid-row: 1 / span 2 !important;
+}
+
+.check-list li {
+  min-height: 40px !important;
+  padding-left: 56px !important;
+}
+
+.check-list li::before {
+  top: 0 !important;
+  width: 40px !important;
+  height: 40px !important;
+  border: 1px solid rgba(126, 143, 164, 0.16) !important;
+  border-radius: 0 !important;
+  background: rgba(15, 20, 29, 0.84) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+.check-list li::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 14px !important;
+  top: 13px !important;
+  width: 10px !important;
+  height: 6px !important;
+  border-left: 1.65px solid rgba(124, 144, 232, 0.72) !important;
+  border-bottom: 1.65px solid rgba(124, 144, 232, 0.72) !important;
+  transform: rotate(-45deg) !important;
+}
+
+@media (max-width: 720px) {
+  .pain-icons span,
+  .managed-brief-icon,
+  .managed-card-icon,
+  .question-icon,
+  .role-icon,
+  .security-icon {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+    flex-basis: 38px !important;
+  }
+
+  .pain-icons span svg,
+  .managed-brief-icon svg,
+  .managed-card-icon svg,
+  .question-icon svg,
+  .role-icon svg,
+  .security-icon svg {
+    width: 17px !important;
+    height: 17px !important;
+  }
+
+  .question-list article {
+    grid-template-columns: 38px minmax(0, 1fr) !important;
+  }
+
+  .check-list li {
+    min-height: 38px !important;
+    padding-left: 54px !important;
+  }
+
+  .check-list li::before {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .check-list li::after {
+    left: 13px !important;
+    top: 12px !important;
+  }
+}
