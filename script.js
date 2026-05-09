@@ -23,7 +23,7 @@ function buildPlanText() {
     `Role focus: ${teamRole.value}`,
     `Size: ${teamSize.value} people`,
     `Level mix: ${teamLevel.value}`,
-    "Launch needs: Nebula AI sourcing, Axiom Cortex vetting, pricing plan, EOR, payroll, device, MDM, and access path."
+    "Launch needs: Nebula Intelligent Talent Graph, Axiom Cortex vetting, pricing plan, EOR, payroll, device, MDM, and access path."
   ].join("\n");
 }
 

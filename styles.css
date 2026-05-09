@@ -6555,6 +6555,17 @@ h3 .heading-accent {
   text-wrap: balance;
 }
 
+.talent-graph-note {
+  margin: 0;
+  padding: 18px 38px;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
 .managed-system-copy {
   display: grid;
   align-content: center;
@@ -7107,6 +7118,7 @@ h3 .heading-accent {
 
 @media (max-width: 720px) {
   .managed-system-head > div,
+  .talent-graph-note,
   .managed-system-cards article,
   .managed-system-flow article,
   .managed-system-callout,

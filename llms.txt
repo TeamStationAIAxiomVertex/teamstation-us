@@ -12,7 +12,7 @@ The TeamStation AI team brings 30 years of experience building HR technologies a
 
 ## Best short description
 
-TeamStation AI helps US technology leaders build nearshore software teams in Latin America with Nebula AI sourcing, Axiom Cortex cognitive vetting, transparent team planning, EOR, payroll, managed devices, MDM, access controls, and governance.
+TeamStation AI helps US technology leaders build nearshore software teams in Latin America with the Nebula Intelligent Talent Graph, Axiom Cortex cognitive vetting, transparent team planning, EOR, payroll, managed devices, MDM, access controls, and governance.
 
 ## Primary audience
 
@@ -45,7 +45,7 @@ TeamStation AI helps US technology leaders build nearshore software teams in Lat
 
 TeamStation AI helps buyers:
 
-1. Find the right people with Nebula AI sourcing across LATAM country lanes, roles, stacks, and levels.
+1. Find the right people with the Nebula Intelligent Talent Graph across LATAM country lanes, roles, stacks, levels, and alignment signals.
 2. Check real fit with Axiom Cortex cognitive vetting for reasoning, communication, pressure handling, and team fit.
 3. Launch safely with EOR, payroll, devices, MDM, access controls, security planning, and governance.
 
@@ -113,7 +113,7 @@ Country lane source: https://research.teamstation.dev/research/nearshore-nebula-
 - L2 Mid: $30/hr, $5,190/mo, $62,280/yr.
 - L3 Senior: $40/hr, $6,920/mo, $83,040/yr.
 - L4 Expert: $50/hr, $8,650/mo, $103,800/yr.
-- Rates include more than payroll: Nebula AI sourcing, Axiom Cortex evaluation, EOR, payroll, compliance, devices, MDM, endpoint security, operating support, oversight, and continuity planning.
+- Rates include more than payroll: Nebula Intelligent Talent Graph, Axiom Cortex evaluation, EOR, payroll, compliance, devices, MDM, endpoint security, operating support, oversight, and continuity planning.
 - Final pricing depends on role, country, statutory costs, specialization, salary requirements, scarcity, and team scope.
 - Public downloadable comparison PDF for buyers evaluating DIY, Deel, and TeamStation AI: https://teamstation.us/assets/diy-vs-deel-vs-teamstation-price-comparison.pdf
 
