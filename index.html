@@ -30,6 +30,7 @@
   <link rel="alternate" type="text/markdown" href="/llms.txt" title="TeamStation AI LLM summary">
   <link rel="preload" href="/assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/styles.css?v=20260510-5">
+  <link rel="stylesheet" href="/footer.css?v=20260512-1">
 
   <script type="application/ld+json">
   {
@@ -125,7 +126,12 @@
     "publisher": {
       "@id": "https://teamstation.us/#organization"
     },
-    "inLanguage": "en-US"
+    "inLanguage": "en-US",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://teamstation.us/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -146,6 +152,9 @@
     },
     "mainEntity": {
       "@id": "https://teamstation.us/#service"
+    },
+    "breadcrumb": {
+      "@id": "https://teamstation.us/#breadcrumb"
     },
     "primaryImageOfPage": {
       "@type": "ImageObject",
@@ -211,7 +220,7 @@
       "nearshore developers in Ecuador",
       "nearshore developers in Guatemala"
     ],
-    "dateModified": "2026-05-09"
+    "dateModified": "2026-05-12"
   }
   </script>
   <script type="application/ld+json">
@@ -243,7 +252,7 @@
     "@type": "Service",
     "@id": "https://teamstation.us/#service",
     "name": "Nearshore Software Development for CTOs and CIOs",
-    "serviceType": "Nearshore software development for CTOs and CIOs, Agentic AI Dev Workflow teams, LATAM software engineering teams, Intelligent Talent Graph, Axiom Cortex fit checks, EOR, payroll, secure onboarding, and delivery governance",
+    "serviceType": "Nearshore Software Development, Distributed Engineering Operating System, LATAM Engineering Team Operations, Agentic AI Dev Workflow teams, Intelligent Talent Graph, Axiom Cortex fit checks, EOR, payroll, secure onboarding, and delivery governance",
     "provider": {
       "@id": "https://teamstation.us/#organization"
     },
@@ -255,64 +264,79 @@
       "@type": "Audience",
       "audienceType": "CTO, CIO, VP Engineering, CFO"
     },
-    "offers": [
-      {
-        "@type": "Offer",
-        "name": "L1 Proficient nearshore engineer",
-        "description": "$20/hr; $3,460/mo at 173 average workable hours; $41,520/yr annualized.",
-        "url": "https://teamstation.us/#pricing",
-        "priceCurrency": "USD",
-        "price": "20",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
+    "offers": {
+      "@type": "AggregateOffer",
+      "@id": "https://teamstation.us/#pricing-offer",
+      "name": "TeamStation AI hourly planning model",
+      "url": "https://teamstation.us/#pricing",
+      "priceCurrency": "USD",
+      "lowPrice": "20",
+      "highPrice": "50",
+      "offerCount": "4",
+      "availability": "https://schema.org/InStock",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "L1 Proficient nearshore engineer",
+          "description": "$20/hr; $3,460/mo at 173 average workable hours; $41,520/yr annualized.",
+          "url": "https://teamstation.us/#pricing",
+          "priceCurrency": "USD",
           "price": "20",
+          "availability": "https://schema.org/InStock",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "20",
+            "priceCurrency": "USD",
+            "unitText": "HOUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "L2 Mid nearshore engineer",
+          "description": "$30/hr; $5,190/mo at 173 average workable hours; $62,280/yr annualized.",
+          "url": "https://teamstation.us/#pricing",
           "priceCurrency": "USD",
-          "unitText": "HOUR"
-        }
-      },
-      {
-        "@type": "Offer",
-        "name": "L2 Mid nearshore engineer",
-        "description": "$30/hr; $5,190/mo at 173 average workable hours; $62,280/yr annualized.",
-        "url": "https://teamstation.us/#pricing",
-        "priceCurrency": "USD",
-        "price": "30",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
           "price": "30",
+          "availability": "https://schema.org/InStock",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "30",
+            "priceCurrency": "USD",
+            "unitText": "HOUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "L3 Senior nearshore engineer",
+          "description": "$40/hr; $6,920/mo at 173 average workable hours; $83,040/yr annualized.",
+          "url": "https://teamstation.us/#pricing",
           "priceCurrency": "USD",
-          "unitText": "HOUR"
-        }
-      },
-      {
-        "@type": "Offer",
-        "name": "L3 Senior nearshore engineer",
-        "description": "$40/hr; $6,920/mo at 173 average workable hours; $83,040/yr annualized.",
-        "url": "https://teamstation.us/#pricing",
-        "priceCurrency": "USD",
-        "price": "40",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
           "price": "40",
+          "availability": "https://schema.org/InStock",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "40",
+            "priceCurrency": "USD",
+            "unitText": "HOUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "L4 Expert nearshore engineer",
+          "description": "$50/hr; $8,650/mo at 173 average workable hours; $103,800/yr annualized.",
+          "url": "https://teamstation.us/#pricing",
           "priceCurrency": "USD",
-          "unitText": "HOUR"
-        }
-      },
-      {
-        "@type": "Offer",
-        "name": "L4 Expert nearshore engineer",
-        "description": "$50/hr; $8,650/mo at 173 average workable hours; $103,800/yr annualized.",
-        "url": "https://teamstation.us/#pricing",
-        "priceCurrency": "USD",
-        "price": "50",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
           "price": "50",
-          "priceCurrency": "USD",
-          "unitText": "HOUR"
+          "availability": "https://schema.org/InStock",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "50",
+            "priceCurrency": "USD",
+            "unitText": "HOUR"
+          }
         }
-      }
-    ],
+      ]
+    },
     "serviceOutput": "Nearshore software teams planned across Mexico, Colombia, Brazil, Argentina, Chile, Peru, Costa Rica, Uruguay, Ecuador, and Guatemala.",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -345,6 +369,73 @@
       ]
     },
     "description": "TeamStation AI is a nearshore engineering platform and software outsourcing alternative for US CTOs and CIOs. It helps leaders build Agentic AI Dev Workflow teams in Latin America through the Nebula Intelligent Talent Graph, Axiom Cortex evaluation, team topology planning, secure launch, EOR, payroll, devices, MDM, access controls, and governance."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://teamstation.us/#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://teamstation.us/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Nearshore Software Teams",
+        "item": "https://teamstation.us/#main"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://teamstation.us/#teamstation-ai-platform",
+        "name": "TeamStation AI platform",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://app.teamstation.dev/",
+        "description": "TeamStation AI platform supports a human governed control plane for LATAM engineering team operations, governance, pricing, onboarding, EOR, payroll, MDM, and delivery oversight.",
+        "publisher": {
+          "@id": "https://teamstation.us/#organization"
+        },
+        "offers": {
+          "@id": "https://teamstation.us/#pricing-offer"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://teamstation.us/#nebula-talent-graph",
+        "name": "Nebula Talent Graph",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://docs.teamstation.dev/",
+        "description": "Nebula Talent Graph supports graph based talent alignment for LATAM engineering teams by mapping role, stack, level, country lane, team topology, and alignment signals.",
+        "publisher": {
+          "@id": "https://teamstation.us/#organization"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://teamstation.us/#axiom-cortex",
+        "name": "Axiom Cortex",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://docs.teamstation.dev/",
+        "description": "Axiom Cortex supports neuro psychometric evaluation for reasoning, communication, pressure handling, ownership, technical fit, and team fit.",
+        "publisher": {
+          "@id": "https://teamstation.us/#organization"
+        }
+      }
+    ]
   }
   </script>
   <script type="application/ld+json">
@@ -1645,41 +1736,48 @@
 
   <footer id="site-footer" class="site-footer">
     <div class="wrap footer-grid">
-      <div>
+      <section class="footer-intro" aria-label="TeamStation AI">
         <a class="brand footer-brand" href="/">
           <img src="/assets/teamstation-mark-30.webp" srcset="/assets/teamstation-mark-30.webp 1x, /assets/teamstation-mark-60.webp 2x" alt="" width="30" height="48">
-          <span>TeamStation AI</span>
+          <span>
+            TeamStation AI
+            <small>Distributed Engineering OS</small>
+          </span>
         </a>
-        <p>Nearshore software teams for US CTOs and CIOs.</p>
-        <p class="footer-category-line">Human governed AI systems for nearshore engineering operations.</p>
-      </div>
+        <p>One operating system for LATAM engineering teams, governance, pricing, onboarding, and AI-assisted delivery workflows.</p>
+        <p class="footer-category-line">Connected research, governance, pricing, and engineering systems across the TeamStation AI ecosystem.</p>
+      </section>
       <nav aria-label="TeamStation executive resources">
         <h2>Executive resources</h2>
-        <a href="https://teamstation.dev/">TeamStation AI Distributed Engineering OS</a>
+        <a href="https://teamstation.dev/">Distributed Engineering OS</a>
         <a href="https://cto.teamstation.dev/">CTO nearshore engineering playbook</a>
         <a href="https://cio.teamstation.dev/">CIO nearshore governance command center</a>
-        <a href="https://pricing.teamstation.dev/">Nearshore software development pricing calculator</a>
       </nav>
       <nav aria-label="TeamStation compare and proof resources">
-        <h2>Compare and proof</h2>
-        <a href="https://cto.teamstation.dev/comparisons">Nearshore software development vendor comparisons</a>
-        <a href="https://cto.teamstation.dev/comparisons">TeamStation AI vs staffing vendors, outsourcing firms, and staff augmentation</a>
-        <a href="https://cto.teamstation.dev/case-studies">Nearshore software development case studies</a>
-        <a href="https://cto.teamstation.dev/case-studies">TeamStation AI customer outcomes and delivery proof</a>
+        <h2>Proof + comparisons</h2>
+        <a href="https://cto.teamstation.dev/comparisons">Vendor comparison hub</a>
+        <a href="https://cto.teamstation.dev/comparisons">Staffing and outsourcing alternatives</a>
+        <a href="https://cto.teamstation.dev/case-studies">Nearshore case studies</a>
+        <a href="https://cto.teamstation.dev/case-studies">Delivery proof and outcomes</a>
       </nav>
       <nav aria-label="TeamStation ecosystem resources">
-        <h2>Ecosystem</h2>
+        <h2>Research + ecosystem</h2>
         <a href="https://engineering.teamstation.dev/">Engineering operating system doctrine</a>
-        <a href="https://research.teamstation.dev/">TeamStation AI research proof</a>
-        <a href="https://articles.teamstation.dev/">Nearshore IT staffing articles</a>
-        <a href="https://partner.teamstation.dev/">TeamStation partner program</a>
+        <a href="https://research.teamstation.dev/">Research proof</a>
+        <a href="https://docs.teamstation.dev/">Axiom Cortex methodology</a>
+        <a href="https://articles.teamstation.dev/">Nearshore engineering articles</a>
       </nav>
       <nav aria-label="TeamStation company resources">
-        <h2>Company</h2>
+        <h2>Platform + company</h2>
+        <a href="https://pricing.teamstation.dev/">Pricing calculator</a>
+        <a href="https://partner.teamstation.dev/">Partner program</a>
         <a href="https://jobs.teamstation.dev/">LATAM engineering jobs at TeamStation</a>
-        <a href="https://app.teamstation.dev/">TeamStation platform app login</a>
-        <a href="https://www.linkedin.com/company/teamstation">TeamStation AI on LinkedIn</a>
+        <a href="https://app.teamstation.dev/">Platform app login</a>
+        <a href="https://www.linkedin.com/company/teamstation">LinkedIn</a>
       </nav>
+    </div>
+    <div class="wrap footer-cta-row">
+      <a href="https://teamstation.dev/">Explore the ecosystem</a>
     </div>
     <div class="wrap footer-bottom">
       <span>© 2026 TeamStation AI. All rights reserved.</span>
